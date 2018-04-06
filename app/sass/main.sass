@@ -1,0 +1,619 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+//======================================
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0 auto
+
+.main-holder
+	overflow: hidden
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 35px
+	position: relative
+
+//=============== navigation section =======================
+
+.header-conteiner
+	position: relative
+	width: 100%
+	min-height: 115px
+	display: flex
+	flex-direction: column
+	//background: #fff
+	//background: #eeeeee
+
+	a, a:hover
+		text-decoration: none
+		color: rgb(0, 0, 0)
+
+
+	.logo
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 2
+
+	.info-section
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		border-bottom: 2px solid #ececec
+		font-size: 21px
+		line-height: 1.2
+		text-align: center
+		font-family: "Heebo-Regular"
+	ul
+		list-style: none
+		display: flex
+		flex-wrap: wrap
+		min-height: 50px
+		align-items: center
+
+
+
+	.info-left
+		margin-left: 190px
+		color: rgb(0, 0, 0)
+		li
+			direction: rtl
+			border-right: 2px solid #ececec
+			//min-height: 50px
+			height: 100%
+			display: flex
+			align-items: center
+			padding: 0 20px
+			&:first-child
+				padding-left: 35px
+			&:hover
+				background: #ececec
+				transition: all 0.5s ease
+			a, a:hover
+				text-decoration: none
+				color: rgb(0, 0, 0)
+			.phon-number
+				color: #dc484d
+	.post-card
+		background-image: url(../img/post-card.png)
+		display: block
+		width: 25px
+		height: 18px
+
+
+
+	.info-right
+		color: rgb(163, 163, 163)
+		margin-right: 10px
+		padding-left: 0
+		li
+			direction: rtl
+			min-height: 50px
+			display: flex
+			align-items: center
+			padding: 0 15px
+			&:first-child
+				padding-right: 15px
+				border-right:  2px solid #ececec
+			&:hover
+				background: #ececec
+				transition: all 0.5s ease
+			a, a:hover
+				text-decoration: none
+				color: rgb(163, 163, 163)
+
+	.facebook
+		background-image: url(../img/facebook.png)
+		display: block
+		width: 9px
+		height: 18px
+	.youtube
+		background-image: url(../img/youtube.png)
+		display: block
+		width: 26px
+		height: 19px
+
+	.nav-section
+		position: relative
+		display: flex
+		flex-direction: row
+		min-height: 63px
+		justify-content: flex-end
+		//align-items: right
+		//align-content: right
+		ul
+			direction: rtl
+			display: flex
+			justify-content: right
+			margin: 0 0 0 220px
+			font-size: 20px
+			color: rgb(0, 0, 0)
+			line-height: 1.2
+			font-family: "Heebo-Medium"
+			padding: 0
+			li
+				direction: rtl
+				min-height: 100%
+				display: flex
+				align-items: center
+				margin: 0 15px
+
+//==================== header section =======================
+
+.main
+	.home-header
+		overflow-x: hidden
+		width: 100%
+		//min-height: 532px
+		//min-height: 625px
+		min-height: 680px
+		position: relative
+		background-repeat: no-repeat
+		//background-size: cover
+		//display: flex
+		//justify-content: center
+	.rectangle-left
+		position: absolute
+		top: 0
+		left: 0
+		width: 191px
+		height: 312px
+		background-image: url(../img/rectangle-left.png)
+	.rectangle-right
+		position: absolute
+		top: 0
+		right: -500px
+		bottom: 0
+		width: 100%
+		max-width: 870px
+		background: #e83647
+		opacity: .95
+		transform: skewX(-30deg)
+		//height: 625px
+		//min-height: 652px
+		//position: absolute
+		//top: 0
+		//right: 0
+		//width: 580px
+		////min-height: 652px
+		//height: 100%
+		//background-image: url(../img/rectangle-right.png)
+		//background-repeat: no-repeat
+		//background-size: cover
+
+
+	.content
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding-top: 100px
+	.title
+		direction: rtl
+		text-align: center
+		h1
+			font-size: 71px
+			font-family: "Heebo-Bold"
+			color: rgb(0, 0, 0)
+			line-height: 1.2
+		p
+			font-size: 49px
+			font-family: "Heebo-Regular"
+			color: rgb(0, 0, 0)
+			line-height: 1.2
+
+	.red-label
+		background: #e42a37
+		p
+			direction: rtl
+			font-size: 27px
+			font-family: "Heebo-Bold"
+			color: rgb(255, 255, 255)
+			line-height: 0.972
+			display: inline-block
+			margin: 12px 25px
+
+	.label
+		z-index: 50
+		position: absolute
+		padding: 15px 15px
+		right: -40px
+		bottom: 36%
+		color: #fff
+		text-transform: uppercase
+		font-size: 10px
+		//-webkit-transform: rotate(-90deg)
+		//-ms-transform: rotate(-90deg)
+		transform: rotate(-90deg)
+		&:after
+			content: ''
+			position: absolute
+			right: 109px
+			top: 48%
+			//-webkit-transform: translateY(-50%)
+			//-ms-transform: translateY(-50%)
+			transform: translateY(-50%)
+			width: 5px
+			height: 5px
+			background: #fff
+			//-webkit-border-radius: 50%
+			border-radius: 50%
+
+//=============== Togle mnu ======
+
+.toggle-mnu
+	//background: #666666
+	display: block
+	text-align: right
+	position: absolute
+	right: 26px
+	top: 7px
+	//width: 48px
+	//height: 48px
+	text-align: center
+	line-height: 48px
+
+.toggle-mnu
+	display: block
+	width: 40px
+	height: 28px
+	margin: 22px auto 0
+
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle-mnu span:after
+	top: 9px
+
+.toggle-mnu span
+	position: relative
+	display: block
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 4px
+	background-color: #d91b24
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+/* on activation */
+.toggle-mnu.on span
+	background-color: transparent
+
+.toggle-mnu.on span:before
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-mnu.on span:after
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu
+	opacity: 1
+	visibility: visible
+
+//============== form section ===================
+
+.form-hold
+	background: black
+	padding: 25px
+	min-height: 160px
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+
+
+
+	h3
+		color: #fff
+		text-align: center
+		font-family: "Heebo-Bold", Helvetica
+		font-size: 24px
+		line-height: 1.1
+		margin: 0 0 20px
+
+	.form
+		direction: rtl
+		max-width: 1140px
+		margin: 0 auto
+		position: relative
+		transition: opacity 0.2s ease-in-out
+
+	.form-row-wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -8px
+
+	.form-row
+		width: 25%
+		padding: 0 8px
+
+	.form-control
+		padding: 10px
+		direction: rtl
+		display: block
+		width: 100%
+		height: 60px
+		color: #b5b5b5
+		border: none
+		font-size: 23px
+		font-family: "Heebo-Regular"
+		line-height: 1.2
+		text-decoration: none
+		transition: all .5s ease
+		&:hover
+			background-color: #dad8d2
+			//border-top: 2px solid red
+			text-decoration: none
+			color: #111
+
+	.btn
+		background: #e42a37
+		font-family: "Heebo-Regular"
+		color: white
+		text-align: center
+		height: 60px
+		border: none
+		outline: none
+		display: block
+		width: 100%
+		font-size: 23px
+		text-decoration: none
+		transition: all .5s ease
+		&:hover
+			background-color: #c11b27
+			text-decoration: none
+			//color: #111
+
+
+
+//=================== best sellers section ================================
+
+.section-best-sellers
+	position: relative
+	min-height: 921px
+	padding-top: 60px
+
+	h3
+		direction: rtl
+		font-family: "Heebo-Bold"
+		font-size: 36px
+		color: rgb(0, 0, 0)
+		line-height: 1.2
+		padding-right: 16px
+		margin-bottom: 10px
+
+	.items-list
+		width: 98%
+		display: flex
+		flex-wrap: wrap
+		padding: 0
+		text-align: center
+		list-style: none
+		//margin: 0 -70px
+
+		img
+			width: 230px
+			height: 200px
+		li
+			position: relative
+			text-align: center
+			direction: rtl
+			padding: 0
+			width: 20%
+		p
+			width: 230px
+		.bot-title
+			width: 230px
+			font-family: "Heebo-Bold"
+			font-size: 16px
+			color: #000
+			text-decoration: none
+			text-transform: uppercase
+			padding-top: 5px
+		.bot-description
+			font-family: "Heebo-Light"
+			font-size: 13px
+
+	.video
+		position: relative
+		display: flex
+		justify-content: center
+		margin-top: 80px
+        margin-bottom: 60px
+		.video-controll
+			width: 774px
+			height: 435px
+
+//================ Third section =======================
+
+.third-section
+	width: 100%
+	padding: 80px 0
+	background: url(../img/bg-third-section2.jpg) center center no-repeat
+	background-attachment: fixed
+	background-size: cover
+	margin-bottom: 100px
+	position: relative
+	overflow: hidden
+	min-height: 527px
+	&:after
+		content: ''
+		display: block
+		//width: 694px
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		right: 0
+		margin-left: -250px
+		//z-index: 1040
+		background: url(../img/rectangle-third-section.png) center left no-repeat
+
+
+
+
+
+	.main-holder
+		//display: flex
+		//justify-content: center
+		//align-items: center
+
+	.wrapper
+
+
+
+	ul
+		z-index: 2
+		margin-top: 65px
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		padding: 0
+		text-align: center
+		list-style: none
+	li
+		direction: rtl
+		position: relative
+		text-align: center
+		direction: rtl
+		//padding: 0
+		width: 18%
+		padding: 0 35px
+
+	img
+		width: 101px
+		height: 99px
+	.text
+		font-family: "Heebo-Medium"
+		font-size: 18px
+		color: rgb(0, 0, 0)
+		line-height: 1.119
+		min-height: 80px
+		margin-top: 15px
+	.wrap-span
+		transform: skewX(20deg)
+		display: inline-block
+		background: #d91b24
+		padding: 3px 38px
+	.button
+		font-family: "Heebo-Light"
+		font-size: 17px
+		color: rgb(255, 255, 255)
+		line-height: 1.119
+		display: inline-block
+		transform: skewX(-20deg)
+	.title-section
+		direction: rtl
+		font-size: 52.229px
+		font-family: "Heebo-Bold"
+		color: rgb(255, 255, 255)
+		line-height: 1.321
+		z-index: 22
+		display: inline-block
+		position: absolute
+		top: 50%
+		right: 0
+		text-align: center
+
+
+
+
+
+
+
+
+
+
+
+//==================== fourth section =====================
+
+.fourth-section
+	position: relative
+	min-height: 690px
+	background: white
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
