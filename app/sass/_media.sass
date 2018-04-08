@@ -2,6 +2,15 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width : 1550px)
+    .third-section
+      &:after
+        width: 113%
+      .title-section
+        p
+          margin-left: 1180px
+
+
 @media only screen and (max-width : 1370px)
     .main
       .home-header
@@ -23,6 +32,13 @@
       .label
         bottom: 38%
 
+    .third-section
+      &:after
+        width: 122%
+      .title-section
+        p
+          margin-left: 1070px
+
 
 @media only screen and (max-width : 1300px)
     .section-best-sellers
@@ -31,6 +47,30 @@
           width: 25%
           &:last-child
             display: none
+
+    .third-section
+      padding: 30px 0 15px
+      min-height: 450px
+      &:after
+        content: none
+      .title-section
+        position: relative
+        //text-align: center
+        //margin: 0 auto
+        p
+          text-align: center
+          margin: 0 auto
+          color: black
+          font-family: "Heebo-Bold"
+          font-size: 50px
+        span
+          display: inline
+          font-size: 50px
+      li
+        width: 25%
+
+
+
 
 
 
@@ -94,10 +134,17 @@
           margin-bottom: 25px
 
       .video
-        margin-top: 40px
+        margin: 40px 0
         .video-controll
           width: 500px
           height: 100%
+
+    .third-section
+      img
+        width: 81px
+        height: 81px
+      li
+        padding: 0 10px
 
 
 
@@ -172,11 +219,24 @@
       .footer-holder
         font-size: 12px
 
+    .third-section
+      li
+        width: 50%
+        margin-bottom: 30px
+      .text
+        max-width: 140px
+      .title-section
+        p
+          font-size: 40px
+        span
+          font-size: 40px
+
 
 @media only screen and (max-width : 600px)
     .section-best-sellers
       background-image: none !important
       background: white
+      min-height: 870px
       .items-list
         width: 380px
         img
@@ -222,6 +282,7 @@
         font-size: 19px
 
     .section-best-sellers
+      min-height: 790px
       .items-list
         width: 100%
         img
@@ -241,6 +302,19 @@
 
     .main-holder
       padding: 0 25px
+
+    .third-section
+      //background-image: url()
+      .text
+        font-size: 16px
+      .title-section
+        p
+          font-size: 30px
+        span
+          font-size: 30px
+      ul
+        margin-top: 40px
+
 
 
 
