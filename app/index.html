@@ -26,6 +26,55 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+
+
+
+	<!-- Facebook Pixel Code -->
+
+	<script>
+
+        !function(f,b,e,v,n,t,s)
+
+
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+
+            n.queue=[];t=b.createElement(e);t.async=!0;
+
+
+            t.src=v;s=b.getElementsByTagName(e)[0];
+
+
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '782731271921380');
+
+
+        fbq('track', 'PageView');
+
+	</script>
+
+	<noscript>
+
+		<img height="1" width="1"
+
+			 src="https://www.facebook.com/tr?id=782731271921380&ev=PageView
+
+&noscript=1"/>
+
+	</noscript>
+
+	<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -52,25 +101,12 @@
 				</div>
 				<div class="nav-section">
 					<ul class="main-mnu">
-						<!--<li><a href="#">צרו קשר</a></li>-->
-						<!--<li><a href="#">פרסומים</a></li>-->
-						<!--<li><a href="#">איך זה עובד?</a></li>-->
-						<!--<li><a href="#">למה פולין?</a></li>-->
-						<!--<li><a href="#">אינדקס</a></li>-->
-						<!--<li><a href="#">מיקום</a></li>-->
-
-
 						<li><a href="#">מיקום</a></li>
 						<li><a href="#">אינדקס</a></li>
 						<li><a href="#">למה פולין?</a></li>
 						<li><a href="#">איך זה עובד?</a></li>
 						<li><a href="#">פרסומים</a></li>
 						<li><a href="#">צרו קשר</a></li>
-
-
-
-
-
 					</ul>
 					<div class="togle-wrap">
 						<a href="#" class="toggle-mnu hidden-md hidden-lg"><span></span></a>
@@ -100,10 +136,10 @@
 					<form action="form_processing.php" class="form form-validation" method="post">
 						<div class="form-row-wrap">
 							<div class="form-row">
-								<input name="name" class="form-control" required data-required="true" type="text"  placeholder="שם מלא*">
+								<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="שם מלא*">
 							</div>
 							<div class="form-row">
-								<input name="tel" class="form-control" required data-required="true" type="text" placeholder="טלפון*" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+								<input name="tel" class="form-control" required data-required="true" type="text" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
 							</div>
 							<div class="form-row">
 								<input name="email" class="form-control" required type="email" placeholder="דוא”ל">
@@ -121,7 +157,7 @@
 					<div class="items">
 						<ul class="items-list">
 							<li>
-								<a href="#"><h4></h4></a>
+								<h4><a href="#"><strong>Nova Królikarnia</strong> Investment</a></h4>
 								<span class="image-item">
 								<img src="img/item1.png" alt="">
 								</span>
@@ -238,36 +274,36 @@
 				<!--<div class="main-holder">-->
 				<!--</div>-->
 				<div class="fourth-section">
-                    <h3>qweqwe <span>dasdadada</span></h3>
+                    <h3><span>רונסון נדל”ן</span> - השקעה יציבה ובטוחה</h3>
                     <article class="rd-projects">
-                        <strong>12</strong>
-                        projectes on sale
+                        <strong>11</strong>
+						שנות מסחר בבורסה הפולנית
                     </article>
                     <article class="rd-exp-years">
-                        <strong>19</strong>
-                        of experience
+                        <strong>20,000</strong>
+						לקוחות מרוצים
                     </article>
                     <article class="rd-completed">
-                        <strong>25</strong>
-                        completed investments
+                        <strong>20</strong>
+						שנות <br>ניסיון
                     </article>
                     <article class="rd-residents">
-                        <strong>20000</strong>
-                        happy residents
-                    </article>
+                        <strong>25</strong>
+						פרויקטים שהסתיימו/בנויים
+					</article>
                     <article class="rd-gpw-years">
-                        <strong>11</strong>
-                        years!
+                        <strong>12</strong>
+						פרויקטים<br> למכירה
                     </article>
 				</div>
 			</div>
             <div class="fifth-section">
                 <div class="main-holder">
                     <div class="buttons">
-                        <a href="tel:03-6988888"><span class="phone-text">או דברו איתנו: </span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
-                        <a href="#"><span>dsds <span class="column">ds</span></span><span class="mail"></span></a>
+                        <a href="tel:03-6988888"><span class="phone-text">דברו איתנו</span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
+						<a href="#"><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
                     </div>
-                    <h3>addasd dasdas as:</h3>
+                    <h3>בקרו אותנו ב:</h3>
                     <div class="social-section">
                         <a href="#"><span class="facebook"></span></a>
                         <a href="#"><span class="youtube"></span></a>
@@ -283,8 +319,7 @@
                         </ul>
                     </div>
                     <div class="description">
-                        <p>lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum
-                            lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum lorum </p>
+                        <p>ההדמיות, ההנפשות והמודלים של המבנים המוצגים באתר www.ronson.co.il. דומים לאובייקט הסופי ככל שניתן, כלומר הם עשויים להיות שונים מהמקור, במראה המבנים בפועל, פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים ופונקציונליות המבנים לא ישתנו.</p>
                     </div>
 
                 </div>
@@ -301,7 +336,7 @@
                     </a>
                 </div>
                 <div class="footer-description">
-                    <p><strong>sdsdsdsdsdsdsdsdsdsds </strong>sdsdsdsds dsdsdsdsdsds sdsdsdsd sdsdsdsd sdsds sdsdsdsd sdsdsdsd sdsds sdsdsdsdsd sdsdsdsdsds </p>
+                    <p><strong>ופונקציונליות המבנים לא ישתנו.</strong>פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים </p>
                 </div>
             </div>
         </div>
