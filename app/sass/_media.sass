@@ -101,8 +101,12 @@
         position: relative
         top: auto
         left: auto
+        margin: 20px 0 0
       .footer-description
         text-align: center
+        font-size: 12px
+        strong
+          font-size: 15px
 
 
 /* Medium Devices, Desktops */
@@ -147,6 +151,9 @@
       h3
         text-align: center
         margin-bottom: 30px
+      .items
+        display: flex
+        justify-content: center
       .items-list
         width: 500px
         li
@@ -210,6 +217,7 @@
         li
           &:first-child
             padding-left: 20px
+            background: white
 
     .form-hold
       //padding-top: 450px
@@ -261,10 +269,11 @@
       h3
         display: none
     .fourth-section
-      background-color: rgb(217, 27, 36)
+      background-color: #d91b24
       opacity: .9
       //background-image: url(../img/bg-4-mobi.png)
-      background-image: url(../img/bg4-mobi.png)
+      //background-image: url(../img/bg4-mobi.png)
+      background-image: url(../img/b5.png)
       background-size: cover
       padding-top: 0
       min-height: 440px
@@ -365,6 +374,15 @@
           width: 180px
         .bot-description
           width: 180px
+        .hover-text
+          height: 148px
+          &:hover
+            .hover-btn
+              bottom: 20px
+          .hover-btn
+            display: none
+        .hover-inner
+          bottom: 90px
       .video
         margin-top: 20px
         .video-controll
@@ -414,6 +432,11 @@
         .bot-description
           width: 100%
           font-size: 13px
+        .hover-inner
+          font-size: 10px
+        a
+          strong
+            font-size: 12px
       .video
         .video-controll
           width: 100%
@@ -438,9 +461,9 @@
         margin-top: 40px
 
     .fourth-section
-      background-color: rgb(217, 27, 36)
-      opacity: .9
-      background-image: url(../img/bg-4-mobi.png)
+      //background-color: rgb(217, 27, 36)
+      //opacity: .9
+      //background-image: url(../img/bg-4-mobi.png)
       background-size: cover
 
 
@@ -453,6 +476,12 @@
         .phone
           top: -40px
           right: 42px
+
+    .footer
+      .footer-description
+        font-size: 9px
+        strong
+          font-size: 12px
 
 
 
