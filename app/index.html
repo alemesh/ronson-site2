@@ -75,11 +75,44 @@
 	</noscript>
 
 	<!-- End Facebook Pixel Code -->
+
 </head>
 
 <body>
 
 	<div class="wraper">
+
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h3> השאירו פרטים</h3>
+				<p>לפגישה וקבלת פרטים אודות דירות להשקעה בטוחה בפולין,</p>
+				<form action="" class="form form-validation" method="post">
+					<div class="form-row-wrap">
+						<div class="form-row">
+							<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
+						</div>
+						<div class="form-row">
+							<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+						</div>
+						<div class="form-row">
+							<input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
+						</div>
+						<div class="form-row">
+							<textarea class="form-control textarea"  required type="email" placeholder="תוכן הפנייה"></textarea>
+						</div>
+						<div class="form-row">
+							<input type="submit" class="btn" value="שלח">
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
 		<div class="header">
 			<div class="header-conteiner">
 				<div class="logo">
@@ -90,7 +123,7 @@
 				<div class="info-section">
 					<ul class="info-left">
 						<li><a href="tel:03-6988888"><span class="head-hidden">או דברו איתנו: </span><span class="phon-number">03-6988888</span></a></li>
-						<li class="head-hidden"><a href="#">יש לכם שאלות? <span>לחצו</span></a></li>
+						<li class="head-hidden"><a href="#" id="myBtn">יש לכם שאלות? <span>לחצו</span></a></li>
 						<li class="head-hidden hover-red"><a href="mailto:office@ronson.co.il"><span class="post-card"></span></a></li>
 					</ul>
 					<ul class="info-right">
@@ -136,13 +169,13 @@
 					<form action="form_processing.php" class="form form-validation" method="post">
 						<div class="form-row-wrap">
 							<div class="form-row">
-								<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="שם מלא*">
+								<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
 							</div>
 							<div class="form-row">
-								<input name="tel" class="form-control" required data-required="true" type="text" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+								<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
 							</div>
 							<div class="form-row">
-								<input name="email" class="form-control" required type="email" placeholder="דוא”ל">
+								<input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
 							</div>
 							<div class="form-row">
 								<input type="submit" class="btn" value="שלח >">
@@ -315,7 +348,7 @@
                 <div class="main-holder">
                     <div class="buttons">
                         <a href="tel:03-6988888"><span class="phone-text">דברו איתנו</span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
-						<a href="#"><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
+						<a href="#" id="myBtn2" ><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
                     </div>
                     <h3>בקרו אותנו ב:</h3>
                     <div class="social-section">
