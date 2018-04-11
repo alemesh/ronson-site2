@@ -1145,6 +1145,223 @@ ul
 
 
 
+//================ BLOB PAGE ===========================================
+
+.blog-page
+	background-image: url(../img/blog/bg-blog2.png)
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	width: 100%
+	min-height: 1290px
+	.corner-bg
+		background-image: url(../img/blog/corner.png)
+		background-repeat: no-repeat
+		position: absolute
+		width: 192px
+		height: 328px
+		top: 0
+		left: 0
+
+	.title-section
+		position: relative
+		display: flex
+		justify-content: center
+		margin-top: 145px
+		margin-bottom: 60px
+
+	.contacts-block
+		width: 50%
+		direction: rtl
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		margin-left: 15px
+		color: black
+		.contacts
+			border: 2px solid #879197
+			background: white
+			padding: 20px
+			min-width: 330px
+		.title
+			min-width: 330px
+			text-align: right
+			padding: 0 15px 8px
+		h3
+			font-family: "Heebo-Bold"
+			font-size: 25px
+		.first
+			font-family: "Heebo-Bold"
+			font-size: 20px
+		p
+			font-family: "Heebo-Regular"
+			font-size: 16px
+		.phone
+			background-image: url(../img/blog/phone.png)
+			width: 19px
+			height: 20px
+			display: inline-block
+			margin-left: 5px
+		.mail
+			background-image: url(../img/blog/mail.png)
+			width: 20px
+			height: 15px
+			display: inline-block
+			margin-left: 5px
+		a
+			text-decoration: none
+			color: black
+	.text-block
+		padding: 0 15px
+		width: 50%
+		direction: rtl
+		h1
+			font-family: "Heebo-Bold"
+			font-size: 43px
+			line-height: 1
+		p
+			font-family: "Heebo-Light"
+			font-size: 22px
+			color: rgb(62, 62, 62)
+			line-height: 1.2
+
+	.item-section
+		.items
+			position: relative
+			display: flex
+			flex-direction: column
+			//align-items: center
+		.item
+			min-height: 200px
+			position: relative
+			display: flex
+			direction: rtl
+			margin: 13px 15px
+		.image
+			max-width: 370px
+			margin: 0 0 0 30px
+		.text-block
+			padding: 0
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			h4
+				font-family: "Heebo-Bold"
+				font-size: 24px
+				color: rgb(1, 1, 1)
+				line-height: 1.2
+			.date-block
+				p
+					font-family: "Heebo-Medium"
+					font-size: 15px
+					line-height: 2.2
+				span
+					color: #e42a37
+			.description
+				p
+					font-family: "Heebo-Light"
+					font-size: 19px
+					color: rgb(62, 62, 62)
+					line-height: 1.2
+			.button
+				position: relative
+				//display: inline-block
+				width: 140px
+				height: 50px
+				background: #d91b24
+				color: white
+				display: flex
+				justify-content: center
+				align-items: center
+				text-decoration: none
+				font-family: "Heebo-Medium"
+				font-size: 17px
+				color: rgb(255, 255, 255)
+				line-height: 1.2
+				&:hover
+					transition: all 0.5s ease
+					color: black
+
+	.nav-section
+		margin: 90px 0
+		ul
+			position: relative
+			display: flex
+			justify-content: center
+			font-family: "Heebo-Light"
+			font-size: 25px
+			color: #e42a37
+			direction: rtl
+		li
+			list-style: none
+			margin: 0 5px
+		a
+			text-decoration: none
+			color: #e42a37
+
+		.current
+			font-family: "Heebo-Bold"
+			border-bottom: 2px solid red
+		.prev
+			position: relative
+			&:after
+				content: ''
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 11px
+				left: 0
+				border-right: 3px solid red
+				border-bottom: 3px solid red
+				transform: rotate(-45deg)
+		.next
+			position: relative
+			&:after
+				content: ''
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 11px
+				right: 0
+				border-right: 3px solid red
+				border-bottom: 3px solid red
+				transform: rotate(135deg)
+
+
+
+
+//================= SINGLE PAGE =========================
+
+.single-page
+	background-image: url(../img/blog/bg-single.png)
+	background-size: cover
+	background-repeat: no-repeat
+	width: 100%
+	min-height: 1000px
+	position: relative
+	.corner-bg
+		background-image: url(../img/blog/corner.png)
+		background-repeat: no-repeat
+		position: absolute
+		width: 192px
+		height: 328px
+		top: 0
+		left: 0
+	.variable-width
+		position: relative
+		display: flex
+		justify-content: center
+		margin: 70px 0 40px
+	.item
+		max-width: 1220px
+	.text-section
+		direction: rtl
+
+
+
+
+
+
 
 
 
