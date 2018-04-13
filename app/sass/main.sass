@@ -1636,9 +1636,143 @@ ul
 //======================== HOW page =============================
 
 .how-page
+	position: relative
+	.corner-bg
+		background-image: url(../img/blog/corner.png)
+		background-repeat: no-repeat
+		position: absolute
+		width: 192px
+		height: 328px
+		top: 0
+		left: 0
+		z-index: 2
+	.how-it-works
+		background-image: url(../img/blog/how-bg.png)
+		background-size: cover
+		background-repeat: no-repeat
+		width: 100%
+		min-height: 764px
+		position: relative
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		padding: 150px 0
+	.how-title
+		display: flex
+		direction: rtl
+		flex-direction: column
+		align-items: center
+		text-align: center
+		margin-bottom: 60px
+		h1
+			font-family: "Heebo-Bold"
+			font-size: 43px
+			color: rgb(1, 1, 1)
+			line-height: 1.2
+			margin-bottom: 30px
+		p
+			font-family: "Heebo-Light"
+			font-size: 25px
+			color: rgb(62, 62, 62)
+			line-height: 1.2
+	.how-buttons
+		position: relative
+		display: flex
+		justify-content: center
+		.button-item
+			direction: rtl
+			position: relative
+			display: flex
+			justify-content: center
+			width: 340px
+			height: 240px
+			margin: 0 35px
+			border-bottom: 5px solid red
+		.item-img
+			background: white
+			opacity: .5
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+
+		.button
+			position: absolute
+			top: 37%
+			background: #d91b24
+			display: flex
+			justify-content: center
+			align-items: center
+			min-width: 220px
+			height: 60px
+			font-family: "Heebo-Medium"
+			font-size: 25px
+			line-height: 1.305
+			color: rgb(255, 255, 255)
+			text-decoration: none
+			z-index: 22222222
+			&:hover
+				transition: all .5s ease
+				background: black
+
 	.third-section
 		min-height: 446px
-		ul
+		img
+			width: auto
+			height: auto
+
+	.fourth-section
+		position: relative
+		background-image: url(../img/blog/how-bg-4-section.png)
+		background-size: cover
+		background-repeat: no-repeat
+		width: 100%
+		min-height: 854px
+		//padding: 0
+		padding: 100px 0
+		.wrap-fourch-section
+			position: relative
+			display: flex
+			justify-content: center
+			flex-direction: column
+		.item-fourt-section
+			direction: rtl
+			position: relative
+			display: flex
+			align-items: center
+			border-bottom: 1px solid #b7b7b7
+			margin: 0 0 25px
+		.img-fourtch-section
+			position: relative
+			margin: 2px 50px auto
+			img
+				max-width: none
+
+		.desription-fourtch-section
+			padding: 0 0 30px 0
+		h4
+			font-family: "Heebo-Medium"
+			font-size: 28px
+			color: rgb(0, 0, 0)
+			line-height: 0.893
+		p
+			font-family: "Heebo-Light"
+			font-size: 23px
+			color: rgb(0, 0, 0)
+			line-height: 1.2
+
+
+
+
+
+
+
+
+
+
+
 
 
 
