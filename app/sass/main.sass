@@ -81,6 +81,13 @@ ul
 	padding: 0 35px
 	position: relative
 
+//======= floating form =====================
+.sticky
+	position: fixed
+	top: 0px
+	z-index: 9999
+//======= finish floating form =====================
+
 //=============== navigation section =======================
 
 .header-conteiner
@@ -143,17 +150,21 @@ ul
 				color: rgb(0, 0, 0)
 			.phon-number
 				color: #dc484d
-		//.head-hidden.hover-red
-		//	&:hover
-		//		a
-		//			transition: all 0.5s ease
-		//			background: #e42a37
+		#myBtn
+			span
+				color: #e42a37
+		.head-hidden.hover-red
+			&:hover
+				a
+					transition: all 0.5s ease
+					background: #e42a37
 
 	.post-card
 		background-image: url(../img/post-card.png)
 		display: block
 		width: 25px
 		height: 18px
+
 
 
 
@@ -178,15 +189,23 @@ ul
 				color: rgb(163, 163, 163)
 
 	.facebook
-		background-image: url(../img/facebook.png)
+		background-image: url(../img/facebook-footer-black.png)
+		background-size: cover
 		display: block
 		width: 9px
 		height: 18px
+		&:hover
+			transition: all 0.2s ease
+			background-image: url(../img/facebook-footer.png)
 	.youtube
-		background-image: url(../img/youtube.png)
+		background-image: url(../img/youtube-footer-black.png)
+		background-size: cover
 		display: block
 		width: 26px
 		height: 19px
+		&:hover
+			transition: all 0.2s ease
+			background-image: url(../img/youtube-footer.png)
 
 	.nav-section
 		position: relative
@@ -197,6 +216,16 @@ ul
 		//align-items: right
 		//align-content: right
 		border-bottom: 2px solid #ececec
+		background: white
+		.floating-logo
+			background-image: url(../img/logo.png)
+			background-size: cover
+			background-repeat: no-repeat
+			position: absolute
+			left: 0
+			top: 0
+			width: 136px
+			height: 60px
 		ul
 			direction: rtl
 			display: flex
@@ -210,10 +239,11 @@ ul
 			&:hover
 				a
 					color: rgb(163, 163, 163)
-					transition: all 0.5s ease
+					transition: all 0.2s ease
 			li
 				direction: rtl
-				min-height: 100%
+				//min-height: 100%
+				min-height: 60px
 				display: flex
 				align-items: center
 				margin: 0 15px
@@ -395,6 +425,9 @@ ul
 	bottom: 0
 	left: 0
 	width: 100%
+	input, textarea
+		&::placeholder
+			color: #b9b9b9
 
 
 
@@ -465,7 +498,7 @@ ul
 
 .section-best-sellers
 	position: relative
-	min-height: 921px
+	min-height: 950px
 	padding-top: 60px
 
 	h3
@@ -656,7 +689,7 @@ ul
 			height: 25px
 			border-left: 8px solid #d91b24
 			border-bottom: 8px solid #d91b24
-			top: 50%
+			top: 43%
 			left: 0
 			transform: rotate(45deg)
 		&:first-child
@@ -737,7 +770,7 @@ ul
 		position: absolute
 		font-size: 2vw
 		top: -13%
-		left: 51%
+		left: 52%
 		//height: 59%
 		color: red
 		direction: rtl
@@ -760,7 +793,8 @@ ul
 
 .fourth-section
 	//background: url(../img/bg-fourtch-section.png) no-repeat top
-	background: url(../img/reliable-developer.png) no-repeat top
+	//background: url(../img/reliable-developer.png) no-repeat top
+	background: url(../img/bg-fourtch-section.png) no-repeat top
 	background-size: 100% auto
 	position: relative
 	width: 100%
@@ -777,7 +811,7 @@ ul
 		font-size: 1.2vw
 		text-transform: uppercase
 		line-height: 1.08
-		font-family: "Heebo-Regular"
+		font-family: "Heebo-Light"
 		strong
 			//font-size: 3.2vw
 			font-family: "Heebo-Bold"
@@ -785,24 +819,24 @@ ul
 			font-size: 2.5vw
 			display: block
 	.rd-projects
-		top: 33%
+		top: 35%
 		left: 17%
 		height: 45%
 	.rd-exp-years
-		top: 23%
+		top: 24%
 		left: 46%
 		height: 40%
 	.rd-completed
-		top: 42%
+		top: 44%
 		left: 33%
 		height: 46%
 	.rd-residents
-		top: 31%
-		left: 60.5%
+		top: 34%
+		left: 60%
 		height: 51%
 	.rd-gpw-years
-		top: 7%
-		left: 72%
+		top: 8%
+		left: 73%
 		height: 59%
 
 //=============== fifth section ==================
@@ -884,12 +918,18 @@ ul
 			display: inline-block
 			background-image: url(../img/facebook-footer.png)
 			background-size: cover
+			&:hover
+				transition: all 0.3s ease
+				background-image: url(../img/facebook-footer-black.png)
 		.youtube
 			width: 54px
 			height: 39px
 			display: inline-block
 			background-image: url(../img/youtube-footer.png)
 			background-size: cover
+			&:hover
+				transition: all 0.3s ease
+				background-image: url(../img/youtube-footer-black.png)
 
 
 	.nav
@@ -980,7 +1020,7 @@ ul
 	display: none /* Hidden by default */
 	position: fixed /* Stay in place */
 	z-index: 99 /* Sit on top */
-	padding-top: 110px /* Location of the box */
+	padding-top: 210px /* Location of the box */
 	left: 0
 	top: 0
 	width: 100% /* Full width */
@@ -1024,6 +1064,9 @@ ul
 		margin: 0 auto
 		position: relative
 		transition: opacity 0.2s ease-in-out
+		input, textarea
+			&::placeholder
+				color: #b9b9b9
 
 	.form-row-wrap
 		display: flex
@@ -1427,7 +1470,7 @@ ul
 		position: relative
 
 .slick-prev:hover, .slick-next:hover
-	background: #f3b940
+	background: black
 .slick-prev:focus, .slick-next:focus
 	background: black
 
@@ -1439,7 +1482,7 @@ ul
 	background-size: cover
 	background-repeat: no-repeat
 	width: 100%
-	min-height: 1140px
+	min-height: 1120px
 	position: relative
 	.corner-bg
 		background-image: url(../img/blog/corner.png)
@@ -1521,6 +1564,9 @@ ul
 		justify-content: center
 		flex-direction: column
 		align-items: center
+		a
+			text-decoration: none
+			color: #3e3e3e
 		.first-block
 			border: 1px solid #879197
 			background: white
@@ -1712,13 +1758,18 @@ ul
 			line-height: 1.305
 			color: rgb(255, 255, 255)
 			text-decoration: none
-			z-index: 22222222
+			z-index: 2
 			&:hover
 				transition: all .5s ease
 				background: black
 
 	.third-section
 		min-height: 446px
+		li
+			&:after
+				top: 35%
+		.wrap-img
+			min-height: 100px
 		img
 			width: auto
 			height: auto
@@ -1747,6 +1798,7 @@ ul
 		.img-fourtch-section
 			position: relative
 			margin: 2px 50px auto
+			min-width: 100px
 			img
 				max-width: none
 
@@ -1757,6 +1809,7 @@ ul
 			font-size: 28px
 			color: rgb(0, 0, 0)
 			line-height: 0.893
+			margin-bottom: 8px
 		p
 			font-family: "Heebo-Light"
 			font-size: 23px
