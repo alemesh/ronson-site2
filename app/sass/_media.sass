@@ -76,6 +76,13 @@
     .wrap-fourth-section
       padding-top: 70px
 
+    .contacts-page
+      .left-section
+        .first-block
+          min-width: 100%
+        .second-block
+          min-width: 100%
+
 
 
 
@@ -111,6 +118,11 @@
         font-size: 12px
         strong
           font-size: 15px
+
+    .main
+      .single-page
+        .content
+          padding-top: 10px
 
 
 /* Medium Devices, Desktops */
@@ -184,8 +196,11 @@
 
 
     .blog-page
+      background-image: url(../img/blog/how-bg.png)
+      background-size: contain
       .title-section
-        margin-top: 60px
+        margin-top: 40px
+        margin-bottom: 40px
         width: 100%
         flex-wrap: wrap
         //justify-content: center
@@ -202,6 +217,8 @@
         align-items: center
         text-align: center
         margin-bottom: 25px
+        h1
+          margin-bottom: 25px
         .button
           margin-top: 10px
 
@@ -209,8 +226,64 @@
         .item
           flex-direction: column
           align-items: center
+          margin: 10px 15px
+          &:last-child
+            .text-block
+              border-bottom: none
         .image
           margin: 0 0 15px
+        .text-block
+          text-align: right
+          max-width: 370px
+          border-bottom: 2px solid #dfdfdf
+          padding-bottom: 15px
+          margin-bottom: 0
+
+          .button
+            display: none
+
+    .single-page
+      background-image: url(../img/blog/how-bg.png)
+      background-size: contain
+      .item
+        max-width: 770px
+
+    .why-page
+      background-image: url(../img/blog/how-bg.png)
+      background-size: contain
+
+    .contacts-page
+      .wrap-contacts
+        margin-top: 50px
+      .left-section
+        margin-bottom: 50px
+        order: 2
+        width: 100%
+        display: flex
+        justify-content: center
+        .first-block
+          min-width: 80%
+        .second-block
+          min-width: 80%
+      .right-section
+        margin: 0 0 30px
+        order: 1
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        .wrap-right-section
+          text-align: center
+        .form
+          width: 80%
+
+    .how-page
+      .how-buttons
+        .button-item
+          margin: 20px 15px 0
+
+
+
 
     .sticky
       display: none
@@ -410,6 +483,79 @@
             p
               font-size: 16px
 
+    .single-page
+      .item
+        max-width: 490px
+      .text-section
+        h1
+          font-size: 31px
+    .slick-next
+      right: -15px
+      width: 35px
+      height: 70px
+    .slick-prev
+      left: -15px
+      width: 35px
+      height: 70px
+
+    .why-page
+      .corner-bg
+        display: none
+      .text-section
+        margin: 40px 15px
+
+    .contacts-page
+      background-image: url(../img/blog/bg-blog2.png)
+      background-size: contain
+      .corner-bg
+        display: none
+      .left-section
+        .first-block
+          min-width: 90%
+        .second-block
+          min-width: 90%
+      .right-section
+        .form
+          min-width: 90%
+
+    .how-page
+      .corner-bg
+        display: none
+      .how-it-works
+        padding: 50px 0
+      .how-title
+        margin-bottom: 30px
+      .fourth-section2
+        padding: 60px 0
+        .wrap-fourch-section
+          align-items: center
+        .item-fourt-section
+
+        h4
+          font-size: 25px
+          margin-bottom: 25px
+        p
+          font-size: 23px
+        .img-fourtch-section
+          width: 100%
+          margin-bottom: 30px
+          display: flex
+          justify-content: center
+          align-items: center
+        .desription-fourtch-section
+          width: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-direction: column
+          text-align: center
+        .item-fourt-section
+          flex-wrap: wrap
+          border-bottom: none
+
+
+
+
 
 
 @media only screen and (max-width : 600px)
@@ -444,6 +590,30 @@
       width: 450px
     .modal
       padding-top: 130px
+
+    .single-page
+      .text-section
+        h1
+          font-size: 25px
+    .main
+      .single-page
+        .content
+          padding-top: 20px
+          padding-bottom: 70px
+
+    .contacts-page
+      .left-section
+        h4
+          font-size: 18px
+        p
+          font-size: 16px
+      .right-section
+        .form-control
+          font-size: 21px
+        .btn
+          font-size: 21px
+
+
 
 
 /* Extra Small Devices, Phones */
@@ -550,13 +720,16 @@
 
     .blog-page
       .item-section
+        .item
+          max-width: 300px
         .image
-          max-width: 330px
+          max-width: 300px
+          width: 100%
         .text-block
-          width: 300px
+          max-width: 290px
       .contacts-block
         .contacts
-          min-width: 300px
+          min-width: 295px
       .nav-section
         margin: 30px 0
         ul
@@ -566,6 +739,69 @@
       padding-top: 20px
     .modal-content
       width: 350px
+
+    .single-page
+      .variable-width
+        margin: 40px 0 40px
+      .item
+        max-width: 330px
+      .slider-section
+        margin: 0
+      .text-section
+        margin: 0
+        h1
+          font-size: 21px
+        .date-single
+          font-size: 18px
+    .slick-next
+      right: -15px
+      width: 30px
+      height: 50px
+    .slick-prev
+      left: -15px
+      width: 30px
+      height: 50px
+
+    .main
+      .why-page
+        .content
+          padding-top: 30px
+    .why-page
+      .text-section
+        margin: 40px 0
+        h1
+          font-size: 31px
+          text-align: center
+        .description-why
+          margin-top: 35px
+          p
+            font-size: 18px
+            margin-top: 0
+
+    .contacts-page
+      min-height: 710px
+      .hidden-textarea
+        display: none
+      .left-section
+        .first-block
+          min-width: 100%
+          padding: 15px
+        .second-block
+          min-width: 100%
+      .right-section
+        .form
+          min-width: 100%
+
+    .how-page
+      .how-buttons
+        .button-item
+          width: 100%
+          margin: 20px 0 0
+
+
+
+
+
 
 
 
