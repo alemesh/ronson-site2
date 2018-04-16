@@ -424,14 +424,17 @@
           text-align: center
 
     .fifth-section
-      background: white
+      //background: white
       .buttons
+        .mobile-hidden
+          display: flex
         margin: 70px 0 5px
         a
-          min-width: 150px
-          font-size: 18px
+          min-width: 130px
+          font-size: 14px
           margin: 0
           transform: skewX(0deg)
+          background: #ececec
         span
           transform: skewX(0deg)
         .phon-number
@@ -440,15 +443,17 @@
           display: block
           transform: skewX(0deg)
         .mail
-          top: -35px
-          right: 53px
+          top: -30px
+          right: 43px
           width: 45px
           height: 45px
+          background-image: url(../img/mail4.png)
         .phone
-          top: -35px
-          right: 53px
+          top: -30px
+          right: 43px
           width: 45px
           height: 45px
+          background-image: url(../img/phone2.png)
       .nav
         margin: 20px 0 0
       .description
@@ -523,6 +528,7 @@
         display: none
       .how-it-works
         padding: 50px 0
+        background-size: contain
       .how-title
         margin-bottom: 30px
       .fourth-section2
@@ -703,13 +709,16 @@
 
 
     .fifth-section
+      .buttons
+        .mobile-phone
+          right: 44px
       .buttons a
-        min-width: 120px
+        min-width: 105px
         .mail
-          top: -40px
+          top: -30px
           right: 42px
         .phone
-          top: -40px
+          top: -30px
           right: 42px
 
     .footer

@@ -853,6 +853,8 @@ ul
 		align-items: center
 		max-width: 800px
 	.buttons
+		.mobile-hidden
+			display: none
 		display: flex
 		justify-content: center
 		align-items: center
@@ -897,6 +899,15 @@ ul
 			position: absolute
 			top: 13px
 			right: 15px
+		.mobile-phone
+			width: 32px
+			height: 32px
+			display: inline-block
+			background-image: url(../img/mobile-phone.png)
+			background-size: cover
+			position: absolute
+			top: -25px
+			right: 53px
 		.phon-number
 			margin-right: 119px
 	h3
@@ -1802,6 +1813,8 @@ ul
 			align-items: center
 			border-bottom: 1px solid #b7b7b7
 			margin: 0 0 25px
+			&:last-child
+				border-bottom: none
 		.img-fourtch-section
 			position: relative
 			margin: 2px 50px auto
