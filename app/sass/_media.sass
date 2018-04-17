@@ -282,9 +282,14 @@
         .button-item
           margin: 20px 15px 0
 
+    .form-hold
+      .wrap-btn
+        position: relative
+        &:after
+          left: 33%
 
-
-
+    .floating-logo
+      display: none
     .sticky
       display: none
 
@@ -341,7 +346,7 @@
         font-size: 18px
 
       .btn
-        height: 45px
+        height: 55px
 
       .boxes-section
         padding: 0 50px
@@ -358,6 +363,11 @@
 
       .footer-holder
         font-size: 12px
+
+      .wrap-btn
+        position: relative
+        &:after
+          left: 44%
 
     .third-section
       li
@@ -490,7 +500,7 @@
 
     .single-page
       .item
-        max-width: 490px
+        max-width: 645px
       .text-section
         h1
           font-size: 31px
@@ -559,10 +569,8 @@
           flex-wrap: wrap
           border-bottom: none
 
-
-
-
-
+    .toggle-mnu
+      top: 13px
 
 @media only screen and (max-width : 600px)
     .section-best-sellers
@@ -601,6 +609,8 @@
       .text-section
         h1
           font-size: 25px
+      .item
+        max-width: 485px
     .main
       .single-page
         .content
@@ -618,6 +628,12 @@
           font-size: 21px
         .btn
           font-size: 21px
+
+    .form-hold
+      .wrap-btn
+        position: relative
+        &:after
+          left: 42%
 
 
 
@@ -649,6 +665,10 @@
     .form-hold
       h3
         font-size: 19px
+      .wrap-btn
+        position: relative
+        &:after
+          left: 40%
 
     .section-best-sellers
       min-height: 790px
@@ -729,16 +749,19 @@
 
     .blog-page
       .item-section
+        .items
+          justify-content: center
+          align-items: center
         .item
           max-width: 300px
         .image
           max-width: 300px
           width: 100%
         .text-block
-          max-width: 290px
+          max-width: 300px
       .contacts-block
         .contacts
-          min-width: 295px
+          min-width: 300px
       .nav-section
         margin: 30px 0
         ul
@@ -753,7 +776,7 @@
       .variable-width
         margin: 40px 0 40px
       .item
-        max-width: 330px
+        max-width: 410px
       .slider-section
         margin: 0
       .text-section
@@ -809,14 +832,53 @@
 
 
 
-
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+    .single-page
+      .item
+        max-width: 330px
 
 
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+    .header-conteiner
+      .info-right
+        li
+          padding: 0 4px
+          &:first-child
+            padding-right: 15px
+    .main
+      .red-label
+        p
+          font-size: 13px
+      .title
+        p
+          font-size: 25px
+
+    .section-best-sellers
+      .items-list
+        a
+          strong
+            font-size: 10px
+    .section-best-sellers
+      .items-list
+        .hover-inner
+          font-size: 8px
+    .fourth-section
+      .rd-exp-years
+        width: 80%
+    .modal-content
+      width: 300px
+      min-height: 470px
+      .form-control
+        height: 40px
+      .form-control.textarea
+        height: 100px
+    .modal
+      padding-top: 10px
+
 
 
 /*==========  Mobile First  ==========*/

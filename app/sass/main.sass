@@ -375,6 +375,9 @@ ul
 	width: 40px
 	height: 28px
 	margin: 22px auto 0
+	position: absolute
+	right: 15px
+	top: 6px
 
 .toggle-mnu span:after,
 .toggle-mnu span:before
@@ -473,6 +476,22 @@ ul
 			//border-top: 2px solid red
 			text-decoration: none
 			color: #111
+	.wrap-btn
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			border: none
+			outline: 0
+			top: 50%
+			left: 37%
+			width: 11px
+			height: 11px
+			border-left: 2px solid white
+			border-top: 2px solid white
+			//z-index: 99999
+			transform: translateY(-50%) rotate(-45deg)
+			z-index: 99999
 
 	.btn
 		background: #e42a37
@@ -1761,7 +1780,9 @@ ul
 
 		.button
 			position: absolute
-			top: 37%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
 			background: #d91b24
 			display: flex
 			justify-content: center
