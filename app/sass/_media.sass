@@ -113,11 +113,16 @@
         top: auto
         left: auto
         margin: 20px 0 0
+        width: 110px
+        img
+          max-width: 100%
       .footer-description
         text-align: center
         font-size: 12px
         strong
           font-size: 15px
+
+
 
     .main
       .single-page
@@ -257,6 +262,7 @@
         margin-top: 50px
       .left-section
         margin-bottom: 50px
+        margin-top: 0
         order: 2
         width: 100%
         display: flex
@@ -622,7 +628,7 @@
         h4
           font-size: 18px
         p
-          font-size: 16px
+          font-size: 14px
       .right-section
         .form-control
           font-size: 21px
@@ -811,7 +817,7 @@
             margin-top: 0
 
     .contacts-page
-      min-height: 710px
+      min-height: 620px
       .hidden-textarea
         display: none
       .left-section
@@ -904,6 +910,41 @@
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (min-width : 2000px)
+    .third-section
+      &:after
+        background: url(../img/rectangle-third-section.png) center right no-repeat
+        width: 100%
+        top: 0
+      .title-section
+        top: 0
+        left: -380px
+        p
+          margin-left: 0
+          text-align: right
+          margin: 0
+    .main
+      .home-header
+        background-size: cover
+        background-position: bottom
 
+    .wrap-fourth-section
+      padding-top: 120px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2560px)
+    .third-section
+      &:after
+        right: 250px
+      .title-section
+        left: -625px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 3072px)
+    .third-section
+      &:after
+        right: 480px
+      .title-section
+        left: -850px

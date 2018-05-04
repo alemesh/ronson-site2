@@ -218,7 +218,7 @@ ul
 		border-bottom: 2px solid #ececec
 		background: white
 		.floating-logo
-			background-image: url(../img/logo.png)
+			background-image: url(../img/logo2.png)
 			background-size: cover
 			background-repeat: no-repeat
 			position: absolute
@@ -599,6 +599,26 @@ ul
 			&:hover
 				background: black
 				color: white
+				&:after
+					border-left: 2px solid white
+					border-top: 2px solid white
+
+			&:after
+				content: ''
+				position: absolute
+				border: none
+				outline: 0
+				top: 50%
+				left: 15%
+				width: 6px
+				height: 6px
+				border-left: 2px solid black
+				border-top: 2px solid black
+				-webkit-transform: translateY(-50%) rotate(-45deg)
+				-ms-transform: translateY(-50%) rotate(-45deg)
+				transform: translateY(-50%) rotate(-45deg)
+				z-index: 99999
+
 
 		a
 			color: inherit
@@ -1026,7 +1046,10 @@ ul
 		position: absolute
 		top: 0
 		left: 46%
-		margin: 40px 0
+		//margin: 40px 0
+		margin: 5px 0
+		img
+			max-width: 70%
 
 	.footer-description
 		direction: rtl
@@ -1514,6 +1537,8 @@ ul
 	width: 100%
 	min-height: 1120px
 	position: relative
+	.main-holder
+		max-width: 1000px
 	.corner-bg
 		background-image: url(../img/blog/corner.png)
 		background-repeat: no-repeat
@@ -1592,7 +1617,8 @@ ul
 	.left-section
 		width: 50%
 		display: flex
-		justify-content: center
+		//justify-content: center
+		margin-top: 100px
 		flex-direction: column
 		align-items: center
 		a
@@ -1820,6 +1846,8 @@ ul
 		min-height: 854px
 		//padding: 0
 		padding: 100px 0
+		.main-holder
+			max-width: 1000px
 		.wrap-fourch-section
 			position: relative
 			display: flex
