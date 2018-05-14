@@ -180,10 +180,8 @@ ul
 			padding: 0 15px
 			&:first-child
 				padding-right: 15px
-				border-right:  2px solid #ececec
-			//&:hover
-			//	background: #ececec
-			//	transition: all 0.5s ease
+				//border-right:  2px solid #ececec
+				border-left:  2px solid #ececec
 			a, a:hover
 				text-decoration: none
 				color: rgb(163, 163, 163)
@@ -653,8 +651,8 @@ ul
 			text-transform: uppercase
 			padding-top: 5px
 		.bot-description
-			font-family: "Heebo-Light"
-			font-size: 13px
+			font-family: "Heebo-Regular"
+			font-size: 15px
 
 	.video
 		position: relative
@@ -1531,14 +1529,18 @@ ul
 
 
 .why-page
-	background-image: url(../img/blog/why-bg.png)
+	background-image: url(../img/blog/why-bg2.png)
 	background-size: cover
 	background-repeat: no-repeat
 	width: 100%
 	min-height: 1120px
 	position: relative
+	overflow: hidden
 	.main-holder
-		max-width: 1000px
+		max-width: 1300px
+		padding: 0 5px
+		display: flex
+		justify-content: flex-end
 	.corner-bg
 		background-image: url(../img/blog/corner.png)
 		background-repeat: no-repeat
@@ -1547,11 +1549,32 @@ ul
 		height: 328px
 		top: 0
 		left: 0
+		z-index: 2
+	.layer-bg
+		background-image: url(../img/blog/bg-layer4.png)
+		background-repeat: no-repeat
+		position: absolute
+		width: 828px
+		height: 2030px
+		top: -120px
+		left: -37px
+		z-index: 1
+	.layer-bg2
+		background-image: url(../img/blog/bg-layer5.png)
+		background-repeat: no-repeat
+		position: absolute
+		width: 190px
+		height: 326px
+		bottom: 0
+		right: 0
+
 	.content
 		padding-top: 35px
+		margin-bottom: 150px
 	.text-section
 		direction: rtl
 		margin: 180px 15px 130px
+		max-width: 700px
 		h1
 			font-family: "Heebo-Bold"
 			font-size: 43px
@@ -1577,6 +1600,26 @@ ul
 				right: 0
 			span
 				color: #e42a37
+		h3
+			position: relative
+			width: 625px
+			border-bottom: 1px solid #040707
+			margin-bottom: 15px
+			text-align: right
+			margin-right: 0
+			font-family: "Heebo-Bold"
+			font-size: 25px
+			line-height: 1.6
+			color: #d91b24
+			&:after
+				content: ''
+				width: 140px
+				height: 6px
+				background: #d91b24
+				position: absolute
+				bottom: -3px
+				right: 0
+
 		h4
 			text-align: right
 			margin-right: 0
@@ -1847,8 +1890,123 @@ ul
 		//padding: 0
 		padding: 100px 0
 		.main-holder
-			max-width: 1000px
+			max-width: 1300px
+			padding: 0 5px
+
+			.wrap-holder
+				display: flex
+				justify-content: center
+				margin: 0 -50px
+
+
+
+
+		.wrap-fourch-section-left-block
+			padding: 0 50px
+			width: 35%
+			display: flex
+			//justify-content: center
+			flex-direction: column
+			align-items: center
+			.wrap-content
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				background: black
+				padding: 20px
+				width: 400px
+
+			.wrap-right-section
+				width: 100%
+				padding: 0 5px
+
+			h3
+			color: white
+			direction: rtl
+			//text-align: center
+			font-family: "Heebo-Bold"
+			font-size: 41px
+			line-height: 1.2
+			margin: 0 0 10px
+			p
+				direction: rtl
+				font-family: "Heebo-Light"
+				padding: 0 0 10px
+				font-size: 22px
+				color: white
+				line-height: 1.2
+				text-align: right
+
+			.form
+				direction: rtl
+				//max-width: 1140px
+				width: 100%
+				//margin: 0 auto
+				position: relative
+				transition: opacity 0.2s ease-in-out
+				input, textarea
+					&::placeholder
+						color: #b9b9b9
+
+			.form-row-wrap
+				display: flex
+				flex-wrap: wrap
+				flex-direction: column
+				//margin-bottom: 20px
+			//margin: 0 -8px
+
+			.form-row
+				width: 100%
+				//padding: 0 8px
+				//border: 1px solid black
+				margin: 5px 0
+
+			.form-control
+				border: 1px solid black
+				padding: 10px
+				direction: rtl
+				display: block
+				width: 100%
+				height: 50px
+				//border: none
+				font-size: 23px
+				font-family: "Heebo-Regular"
+				line-height: 1.2
+				text-decoration: none
+				transition: all .5s ease
+				&:hover
+					//background-color: #dad8d2
+					//border-top: 2px solid red
+					text-decoration: none
+					color: #b9b9b9
+			.form-control.textarea
+				height: 150px
+
+			.btn
+				background: #e42a37
+				font-family: "Heebo-Regular"
+				color: white
+				text-align: center
+				height: 50px
+				border: none
+				outline: none
+				display: block
+				width: 100%
+				font-size: 23px
+				text-decoration: none
+				transition: all .5s ease
+				&:hover
+					background-color: #c11b27
+					text-decoration: none
+
+
+
+
+
 		.wrap-fourch-section
+			padding: 0 50px
+			width: 65%
 			position: relative
 			display: flex
 			justify-content: center
@@ -1881,7 +2039,7 @@ ul
 			margin-bottom: 8px
 		p
 			font-family: "Heebo-Light"
-			font-size: 23px
+			font-size: 21px
 			color: rgb(0, 0, 0)
 			line-height: 1.2
 

@@ -24,6 +24,17 @@ $(function() {
 // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
     var btn2 = document.getElementById("myBtn2");
+    var btn3 = document.getElementsByClassName("myBtns")[0];
+    var btn31 = document.getElementsByClassName("myBtns")[1];
+    var btn4 = document.getElementsByClassName("myBtns")[2];
+    var btn41 = document.getElementsByClassName("myBtns")[3];
+    var btn5 = document.getElementsByClassName("myBtns")[4];
+    var btn51 = document.getElementsByClassName("myBtns")[5];
+    var btn6 = document.getElementsByClassName("myBtns")[6];
+    var btn61 = document.getElementsByClassName("myBtns")[7];
+    var btn7 = document.getElementsByClassName("myBtns")[8];
+    var btn71 = document.getElementsByClassName("myBtns")[9];
+
 
 // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -31,10 +42,47 @@ $(function() {
 // When the user clicks the button, open the modal
     btn.onclick = function() {
         modal.style.display = "block";
-    }
+    };
     btn2.onclick = function() {
         modal.style.display = "block";
-    }
+    };
+
+
+
+    btn3.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn31.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn4.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn41.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn5.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn51.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn6.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn61.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn7.onclick = function() {
+        modal.style.display = "block";
+    };
+    btn71.onclick = function() {
+        modal.style.display = "block";
+    };
+
+
+
+
 
 // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
