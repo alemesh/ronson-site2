@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Ronson</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+
+
+    <!-- Facebook Pixel Code -->
+
+    <script>
+
+        !function(f,b,e,v,n,t,s)
+
+
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+
+            n.queue=[];t=b.createElement(e);t.async=!0;
+
+
+            t.src=v;s=b.getElementsByTagName(e)[0];
+
+
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '782731271921380');
+
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1"
+
+             src="https://www.facebook.com/tr?id=782731271921380&ev=PageView
+
+&noscript=1"/>
+
+    </noscript>
+
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google AdWords: 808590525 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-808590525"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-808590525');
+    </script>
+
+</head>
+
+<body>
+
+<div class="wraper">
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--<h3> השאירו פרטים</h3>-->
+            <!--<p>לפגישה וקבלת פרטים אודות דירות להשקעה בטוחה בפולין,</p>-->
+            <h3>צרו קשר</h3>
+            <p>רוצים שנחזור אליכם? השאירו פרטים ונדבר בהקדם</p>
+            <form action="floating_form_sender.php" class="form form-validation" method="post">
+                <div class="form-row-wrap">
+                    <div class="form-row">
+                        <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
+                    </div>
+                    <div class="form-row">
+                        <input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+                    </div>
+                    <div class="form-row">
+                        <input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
+                    </div>
+                    <div class="form-row">
+                        <textarea class="form-control textarea"  placeholder="תוכן הפנייה"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" class="btn" value="שלח">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="header">
+        <div class="header-conteiner">
+            <div class="logo">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <img src="img/logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="info-section">
+                <ul class="info-left">
+                    <li><a href="tel:03-6988888"><span class="head-hidden">או דברו איתנו: </span><span class="phon-number">03-6988888</span></a></li>
+                    <li class="head-hidden"><a href="#" id="myBtn">יש לכם שאלות? <span>לחצו</span></a></li>
+                    <li class="head-hidden hover-red"><a href="mailto:office@ronson.co.il"><span class="post-card"></span></a></li>
+                </ul>
+                <ul class="info-right">
+                    <!--<li><a href="#">המועדפים עלי (0)</a></li>-->
+                    <li><a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a></li>
+                    <li><a href="http://campaign.gofmans.co.il/ronson/#video-section"><span class="youtube"></span></a></li>
+                </ul>
+            </div>
+            <div class="nav-section" id="form-scrol">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <div class="floating-logo"></div>
+                </a>
+                <ul class="main-mnu">
+                    <!--<li><a href="#">מיקום</a></li>-->
+                    <!--<li><a href="#">אינדקס</a></li>-->
+                    <li><a href="why.html">למה פולין?</a></li>
+                    <li><a href="how.html">איך זה עובד?</a></li>
+                    <li><a href="blog.html">פרסומים</a></li>
+                    <li><a href="contacts.html">צרו קשר</a></li>
+                </ul>
+                <div class="togle-wrap">
+                    <a href="#" class="toggle-mnu hidden-md hidden-lg"><span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+
+        <div class="single-page">
+            <div class="corner-bg"></div>
+            <div class="main-holder">
+                <div class="slider-section">
+                    <div class="variable-width">
+                        <!--<div class="item">-->
+                            <!--<img  src="img/blog/third-article-2.jpg"alt="#">-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="text-section">
+                    <h1>"ורשה לא נופלת מברלין": הישראלים מסתערים על הנדל"ן בפולין</h1>
+                    <span class="date-single">יולי 20, 2017<span> // </span>דה מרקר</span>
+                    <div class="content">
+                        <p>מאות מיליוני שקלים מחסכונות הפנסיה של הציבור בישראל נקברו בשוק הנדל"ן המזרח אירופי לאחר המשבר הגדול של 2008. תחזיות ורודות ותוכניות ענק שפיזרו כרישי נדל"ן למדינות כמו רומניה, בולגריה וסרביה, מונפו בהלוואות עצומות מהציבור, והתבררו בתוך זמן קצר כהשקעות גרועות מאוד. אלא שכמעט עשור לאחר הפיאסקו הגדול, הנדל"ניסטים הישראלים שוב רעבים להשקעות בשוק המזרח אירופי והפעם על הכוונת נמצאת בעיקר פולין.</p>
+                        <img  class="heights" src="img/blog/third-article-2.jpg"alt="#">
+                        <p>הפעילות הישראלית בפולין הואצה משמעותית בשנים האחרונות. חלק מהחברות הישראליות פועלות בתחום הייזום או הבנייה למגורים ובהן הכשרת הישוב, קבוצת לוזון (48.2 +0%) ואפריקה נכסים (8,312-0.38%) , שבונות אלפי יח"ד ברחבי המדינה. חברות אחרות פועלות בתחום הנדל"ן המסחרי כלומר קניונים, מרכזים לוגיסטיים ומשרדים. בקבוצה זו נכללות חברות כמו אטריום מקבוצת גזית גלוב (3,314 -0.78%) (קניונים ,MLP) של הכשרת הישוב (3,466 -1.03%) (מרכזים לוגיסטיים), ואדגר מקבוצת <a href="http://finance.themarker.com/quote/?mador=1&&documentId=1083682" target="_blank">ביטוח ישיר</a> (4,179 +0.82%) (משרדים.)</p>
+                        <p>אחת החברות הישראליות הגדולות הפעילות בפולין היא קבוצת לוזון (לשעבר <a href="http://www.themarker.com/markets/reports/1.2961283" target="_blank">קבוצת דורי</a>), הפועלת במדינה באמצעות החברה הבת (66%) רונסון. בתחילת 2017 חתמה לוזון על הסכם לרכישת קרקע בוורשה, המיועדת לבנייה של כ–1,600 יחידות דיור, בסך של 82 מיליון זלוטי ( שווה בקירוב לשקל).</p>
+                        <img src="img/blog/third-article-3.png" alt="">
+                        <p>הפרויקט החדש הצטרף לשמונה פרויקטים של רונסון הנמצאים בהליכי הקמה, ולעשרה פרויקטים שבנייתם הסתיימה ושמכירתם ממשיכה, וכן לצבר קרקעות ופרויקטים בפולין שעליו צפויות להיבנות 5,931 יח"ד.</p>
+                        <p>"כשהגעתי לדורי, חשבתי שאמכור את רונסון אחרי שלמדתי את המספרים החלטתי דווקא להרחיב את הפעילות", סיפר בעל השליטה עמוס לוזון. "לנו, הישראלים, יש קונוטציות שליליות על פולין בגלל השואה. כשהגעתי לשם, ראיתי שוורשה היא העיר מערבית לגמרי, שלטעמי לא נופלת מברלין. הבנתי את הפוטנציאל. ראיתי שרונסון מוכרת 1,000 דירות בשנה. בישראל אין לנו אף חברה יזמית שמוכרת במספרים כאלה. המדינה מתפתחת מאוד, יש ביקוש גדול לדירות, קטנות יחסית, של כ–50 מ"ר. המחיר של דירה כזו הוא 350–450 אלף שקל, וצריך להביא רק הון העצמי של 15%–20%. התשואה על שכירות היא 5%–6%. בארץ אין מספרים כאלה".</p>
+                        <p>קצת אחריה אפריקה נכסים, מקבוצת אפריקה ישראל, השלימה ב–2017 רכישת קרקע בוורשה ב–23.3 מיליון זלוטי. על הקרקע החברה מתכננת להקים פרויקט מגורים בשטח של 6,000 מ"ר. כבר כיום החברה מעורבת בשני פרויקטים למגורים בעיר קרקוב (420 יח"ד), שמכירתן כמעט הושלמה במלואה, ובשנה הקרובה היא אף מתכננת להתחיל בהקמה של אפי פארק קרקוב פולין (פרויקט משרדים), עם שטחים להשכרה בהיקף של 24 אלף מ"ר.</p>
+                        <img src="img/blog/third-article-4.png" alt="">
+                        <p>שחקנית ישראלית ותיקה נוספת בפולין היא הכשרת הישוב. החברה כבר הספיקה למכור בשנים האחרונות 1,350 יח"ד בשני פרויקטים בערים גדנסק וורשה, שהניבו הכנסות של יותר מ–600 מיליון זלוטי, ורווח של 120 מיליון זלוטי; וזאת בנוסף לשלושה פרויקטים (750 יח"ד) הנמצאים בשלבי ייזום מתקדמים. תומר כץ, סמנכ"ל השקעות ופיתוח עסקי בהכשרת הישוב, הסביר כי העמקת הפעילות בפולין מצד החברה נובעת משיעורי הרווחיות הגבוהים בהשוואה למדינות במערב אירופה ובישראל. "בשל שיעורי הרווחיות הגבוהים, ביחד עם יציבות המדינה, המשתקפת בנתונים המקרו כלכליים ומערכת הבנקאות המסודרת, פולין הופכת לשוק עם המון פוטנציאל", אמר.</p>
+                        <p>בנוסף לפעילות הייזום למגורים, הכשרת הישוב מחזיקה ב–11 פארקים לוגיסטיים לתעשייה בשטח כולל של כ–2.7 מיליון מ"ר ובתפוסה של 98%, באמצעות החברה הבת MLP. כץ הסביר שהצמיחה בתחום המרכזים הלוגיסטיים קשורה למיקום האסטרטגי של פולין. לדבריו, "פולין ממוקמת ליד גרמניה, ויש לה עם כוח עבודה זול יחסית למערב אירופה. זה איפשר להעביר מפעלים ותעשיות ממערב אירופה לפולין".</p>
+                        <p>ההתעניינות המחודשת של הישראלים בפולין קשורה גם לשיפור בסביבה הכלכלית. הכלכלה הפולנית, שהיא השמינית בגודלה באיחוד האירופי, צמחה ברבעון הראשון של 2017 בכ–4%, הקצב הגבוה מאז הרבעון האחרון של 2015. המדינה שמרה בכל השנים האחרונות על שיעורי צמיחה של 2.5%–4.5%, ולפי הערכות היא תצמח השנה בכ–3.5%. התוצר לנפש (GDP) עלה מרמה של 24.4 אלף דולר ב–2014 לרמה של 27.7 אלף דולר ב–2016 — כלומר, צמיחה של 5%–8% בשנה.</p>
+                        <p>הצמיחה בפולין נתמכת בהגירה חיובית ממדינות מזרח אירופה כמו אוקראינה ורומניה, ובהגירה הפנימית לערים הגדולות. ההגירה החיובית מקזזת את שיעור הילודה הנמוך במדינה, שאוכלוסייתה מונה יותר מ–40 מיליון איש, וזאת כששיעור האבטלה ממשיך להיות נמוך כ–5.3% בלבד.</p>
+                        <img src="img/blog/third-article-5.jpg" alt="">
+                        <p>על רקע ההגירה החיובית והצמיחה במשק, 2016 הייתה שנת שיא בענף המגורים: במהלך השנה הוצאו למכירה בששת הערים הגדולות בפולין כ-65 אלף דירות חדשות, כ-25% יותר מאשר בתקופה המקבילה אשתקד, ונמכרו 20% יותר דירות מאשר ב-2015.</p>
+                        <p>החוסן הכלכלי בא לידי ביטוי בתשואות האג"ח של ממשלת פולין, שמדורגות ברמה של BBB פלוס על ידי S&P. אג"ח של ממשלת פולין לעשר שנים נסחרת בתשואה לפדיון של 3.3% אחוז בלבד מעל אג"ח דומה של ממשלת ארה"ב. גם המטבע המקומי, הזלוטי, ממשיך להפגין עוצמה: מתחילת 2017 נחלש הדולר מול הזלוטי ב–15%, כך שעבור דולר אחד ניתן לקבל כיום 3.6 זלוטי.</p>
+                        <p class="h4">מרכזים מסחריים - ותעשייה</p>
+                        <p>הפריחה הנדל"נית בפולין אינה רק בתחום המגורים, אלא גם בתחום הנדל"ן המסחרי. השחקנית הישראלית המרכזית שפועלת בתחום היא חברת הנדל"ן אטריום מקבוצת גזית גלוב. אטריום ביצעה בשנים האחרונות מסע רכישות בפולין בסכום מצטבר של 750 מיליון יורו. כיום, החברה כבר מחזיקה ב–21 קניונים, בשטח של יותר מ–520 אלף מ"ר ובשווי של יותר מ–1.5 מיליארד יורו.</p>
+                        <p>ליעד ברזילי, מנכ"ל אטריום: "יש פה 40 מיליון איש שאוהבים לעבוד"שרון כהן
+                            חברה ישראלית שנייה שהייתה מעורבת עד לאחרונה בתחום המרכזים המסחריים בפולין היא פלאזה סנטרס, שבשליטת אלביט הדמיה. פלאזה, שהיא חברה מסובכת שעברה הסדר חוב, מימשה באחרונה שני קניונים שהיו בבעלותה (קניון סובלאקי וקניון טורון פלאזה). המימושים נעשו במחירים נוחים של 42.3 מיליון יורו וכ–70 מיליון יורו בהתאמה. חברה ישראלית אחרת המעורבת בתחום הנדל"ן המניב היא אדגר מקבוצת ביטוח ישיר שמחזיקה בשישה בניינים משרדים במדינה בשווי של כמיליארד זלוטי.
+                        </p>
+                        <p>לדברי ליעד ברזילי, מנכ"ל אטריום, "פולין זו מדינה מפותחת ומאוד מתקדמת, שיחסית קל לעשות בה עסקים. שוק הנדל"ן חזק מאוד. יש שחקנים בינלאומיים מכל המדינות ומכל הסוגים החל בקרנות הפנסיה גרמניות, האיטלקיות ואמריקאיות וכלה במשקיעים מהמזרח. השוק מאוד דינמי ומאוד חי. אנחנו רואים נתונים טובים של צמיחה, ותנופה בתחום הקניונים. לאנשים במדינה יש תרבות צריכה שמזכירה את התרבות הישראלית.</p>
+                        <p>"רבעון אחר רבעון פולין מציגה צמיחה מתמשכת. יש פה 40 מיליון איש שאוהבים לעבוד, הם פתוחים ובעלי השכלה. המדינה נתמכת על ידי האיחוד האירופי, ושיפרה את התשתיות. השוק נחשב כמעט למערב אירופה, אך מאפשר להשקיע במדינה צומחת. הגופים הבינלאומיים כבר כאן כמה שנים טובות. אני מאוד מאמין בשוק הזה, כך שהוא ימשיך להיות שוק מרכזי של אטריום", הוסיף. ברזילי ציין שאטריום מתכננת להמשיך להשקיע כ–300 מיליון יורו בשנים הבאות בבנייה ובהרחבה של נכסים בפולין.</p>
+                        <p>"רבעון אחר רבעון פולין מציגה צמיחה מתמשכת. יש פה 40 מיליון איש שאוהבים לעבוד, הם פתוחים ובעלי השכלה. המדינה נתמכת על ידי האיחוד האירופי, ושיפרה את התשתיות. השוק נחשב כמעט למערב אירופה, אך מאפשר להשקיע במדינה צומחת. הגופים הבינלאומיים כבר כאן כמה שנים טובות. אני מאוד מאמין בשוק הזה, כך שהוא ימשיך להיות שוק מרכזי של אטריום", הוסיף. ברזילי ציין שאטריום מתכננת להמשיך להשקיע כ–300 מיליון יורו בשנים הבאות בבנייה ובהרחבה של נכסים בפולין.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="fifth-section">
+            <div class="main-holder">
+                <div class="buttons">
+                    <a href="tel:03-6988888" class="mobile-hidden"><span class="phone-text">וואטס אפ עסקי</span><span class="phon-number">03-6988888</span><span class="mobile-phone"></span></a>
+                    <a href="tel:03-6988888"><span class="phone-text">דברו איתנו</span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
+                    <a href="#" id="myBtn2" ><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
+                </div>
+                <h3>בקרו אותנו ב:</h3>
+                <div class="social-section">
+                    <a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a>
+                    <a href="http://campaign.gofmans.co.il/ronson/#video-section"><span class="youtube"></span></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <!--<li><a href="#">מיקום</a></li>-->
+                        <!--<li><a href="#">אינדקס</a></li>-->
+                        <li><a href="why.html">למה פולין?</a></li>
+                        <li><a href="how.html">איך זה עובד?</a></li>
+                        <li><a href="blog.html">פרסומים</a></li>
+                        <li><a href="contacts.html">צרו קשר</a></li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <p>ההדמיות, ההנפשות והמודלים של המבנים המוצגים באתר www.ronson.co.il. דומים לאובייקט הסופי ככל שניתן, כלומר הם עשויים להיות שונים מהמקור, במראה המבנים בפועל, פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים ופונקציונליות המבנים לא ישתנו.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <!--<span class="label">Gofman creative</span>-->
+        <div class="main-holder">
+            <div class="logo-footer">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <img src="img/logo-footer2.png" alt="">
+                </a>
+            </div>
+            <div class="footer-description">
+                <!--<p><strong>ופונקציונליות המבנים לא ישתנו.</strong>פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים </p>-->
+
+                <p>
+                    <!--<strong>א.מ.ו.ר - פולין נדלן בע”מ</strong>-->
+                    <!--משווקת בלעדית של רונסון בישראל<br>-->
+                    טל: 03-6988888 | מייל: office@ronson.co.il<br>
+                    מגדל אלון 2, יגאל אלון 94, תל אביב, קומה 28, מיקוד 6789140</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

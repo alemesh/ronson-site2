@@ -1249,7 +1249,8 @@ ul
 	background-repeat: no-repeat
 	position: relative
 	width: 100%
-	min-height: 1290px
+	min-height: 700px
+	padding-bottom: 1px
 	.corner-bg
 		background-image: url(../img/blog/corner.png)
 		background-repeat: no-repeat
@@ -1334,7 +1335,7 @@ ul
 			direction: rtl
 			margin: 13px 15px
 		.image
-			max-width: 370px
+			max-width: 365px
 			margin: 0 0 0 30px
 		.text-block
 			padding: 0
@@ -1433,8 +1434,12 @@ ul
 	background-size: cover
 	background-repeat: no-repeat
 	width: 100%
-	min-height: 1000px
+	min-height: 500px
 	position: relative
+	.main-holder
+		max-width: 1000px
+	.heights
+		height: 500px
 	.content
 		padding: 10px 0 90px
 	.corner-bg
@@ -1453,13 +1458,23 @@ ul
 		justify-content: center
 		margin: 70px 0 40px
 	.item
-		max-width: 1220px
+		//max-width: 1220px
+		max-width: 100%
 	.text-section
 		direction: rtl
 		margin: 0 15px
+		img
+			margin-bottom: 30px
+			margin-top: 30px
+
 		h1
 			font-family: "Heebo-Bold"
 			font-size: 37px
+		.h4
+			font-family: "Heebo-Bold"
+			font-size: 23px
+
+
 		.date-single
 			font-family: "Heebo-Medium"
 			font-size: 20px
@@ -1476,8 +1491,9 @@ ul
 				color: #e42a37
 		p
 			margin-right: 0
-			margin-top: 19px
-			line-height: 1.2
+			margin-top: 10px
+			margin-bottom: 10px
+			line-height: 1.5
 			font-family: "Heebo-Light"
 
 
@@ -1907,7 +1923,7 @@ ul
 		width: 100%
 		min-height: 854px
 		//padding: 0
-		padding: 100px 0
+		padding: 50px 0
 		.main-holder
 			max-width: 1300px
 			padding: 0 5px
@@ -1916,6 +1932,15 @@ ul
 				display: flex
 				justify-content: center
 				margin: 0 -50px
+			.title
+				color: black
+				direction: rtl
+				//text-align: center
+				font-family: "Heebo-Bold"
+				font-size: 41px
+				line-height: 1.2
+				margin: 0 0 50px
+
 
 
 
@@ -2063,7 +2088,35 @@ ul
 			line-height: 1.2
 
 
+//========================= thanks-page ==========================
 
+.thanks-page
+	.form-hold
+		.wrap-btn
+			&:after
+				content: none
+	.success-msg
+		color: #fff
+		font-size: 20px
+		text-align: center
+		padding: 15px
+		position: absolute
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100%
+		opacity: 0
+		z-index: 5
+		background: rgba(0,0,0, .8)
+		visibility: hidden
+		transition: all .2s ease-in-out
+		font-family: "Heebo-Regular"
+
+	.success-form
+		.success-msg
+			opacity: 1
+			visibility: visible
 
 
 

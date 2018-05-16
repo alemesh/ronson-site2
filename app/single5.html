@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Ronson</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+
+
+    <!-- Facebook Pixel Code -->
+
+    <script>
+
+        !function(f,b,e,v,n,t,s)
+
+
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+
+            n.queue=[];t=b.createElement(e);t.async=!0;
+
+
+            t.src=v;s=b.getElementsByTagName(e)[0];
+
+
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '782731271921380');
+
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1"
+
+             src="https://www.facebook.com/tr?id=782731271921380&ev=PageView
+
+&noscript=1"/>
+
+    </noscript>
+
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google AdWords: 808590525 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-808590525"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-808590525');
+    </script>
+
+</head>
+
+<body>
+
+<div class="wraper">
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--<h3> השאירו פרטים</h3>-->
+            <!--<p>לפגישה וקבלת פרטים אודות דירות להשקעה בטוחה בפולין,</p>-->
+            <h3>צרו קשר</h3>
+            <p>רוצים שנחזור אליכם? השאירו פרטים ונדבר בהקדם</p>
+            <form action="floating_form_sender.php" class="form form-validation" method="post">
+                <div class="form-row-wrap">
+                    <div class="form-row">
+                        <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
+                    </div>
+                    <div class="form-row">
+                        <input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+                    </div>
+                    <div class="form-row">
+                        <input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
+                    </div>
+                    <div class="form-row">
+                        <textarea class="form-control textarea"  placeholder="תוכן הפנייה"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" class="btn" value="שלח">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="header">
+        <div class="header-conteiner">
+            <div class="logo">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <img src="img/logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="info-section">
+                <ul class="info-left">
+                    <li><a href="tel:03-6988888"><span class="head-hidden">או דברו איתנו: </span><span class="phon-number">03-6988888</span></a></li>
+                    <li class="head-hidden"><a href="#" id="myBtn">יש לכם שאלות? <span>לחצו</span></a></li>
+                    <li class="head-hidden hover-red"><a href="mailto:office@ronson.co.il"><span class="post-card"></span></a></li>
+                </ul>
+                <ul class="info-right">
+                    <!--<li><a href="#">המועדפים עלי (0)</a></li>-->
+                    <li><a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a></li>
+                    <li><a href="http://campaign.gofmans.co.il/ronson/#video-section"><span class="youtube"></span></a></li>
+                </ul>
+            </div>
+            <div class="nav-section" id="form-scrol">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <div class="floating-logo"></div>
+                </a>
+                <ul class="main-mnu">
+                    <!--<li><a href="#">מיקום</a></li>-->
+                    <!--<li><a href="#">אינדקס</a></li>-->
+                    <li><a href="why.html">למה פולין?</a></li>
+                    <li><a href="how.html">איך זה עובד?</a></li>
+                    <li><a href="blog.html">פרסומים</a></li>
+                    <li><a href="contacts.html">צרו קשר</a></li>
+                </ul>
+                <div class="togle-wrap">
+                    <a href="#" class="toggle-mnu hidden-md hidden-lg"><span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+
+        <div class="single-page">
+            <div class="corner-bg"></div>
+            <div class="main-holder">
+                <div class="slider-section">
+                    <div class="variable-width">
+                        <!--<div class="item">-->
+                        <!--<img src="img/blog/fiftch-article-1.jpg"alt="#">-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="text-section">
+                    <h1>שלוש הוכחות לכך שמחירי הדירות ימשיכו לרדת</h1>
+                    <span class="date-single">מאי 14, 2018 <span> // </span> גלובס</span>
+                    <div class="content">
+                        <p>במהלך העשור האחרון, שבו החלו מחירי הדירות לעלות בקצב מואץ, חווה ענף הנדל"ן למגורים שלוש תקופות של קיפאון וחוסר ודאות.</p>
+                        <p>בתקופה הראשונה, מסוף 2011 עד תחילת 2012, הנהיג נגיד בנק ישראל דאז, סטנלי פישר, תוואי ריבית עולה, על רקע אינפלציה גבוהה שנבע ברובה מעלייה חדה במחירי השכירויות. העלאת הריבית המוניטארית ב-3% בתוך שנתיים בלמה את העלייה החדה במחירי הדירות, עד לכדי יציבות מחירים באמצע 2012. אולם, לאחר שבנק ישראל חזר ב-2013 לתוואי ריבית יורד, חזרו מחירי הדירות לעלות בקצב דו ספרתי (אם רוצים, תקופה זו הינה ההוכחה טובה ביותר לטענה ששורשי הגאות במחירי הדירות נעוצים במדיניות הריבית האפסית של בנק ישראל).</p>
+                        <img class="heights" src="img/blog/fiftch-article-1.jpg"alt="#">
+                        <p>התקופה השנייה של חוסר הוודאות החלה בתחילת 2014, עם הכרזת שר האוצר דאז, יאיר לפיד, על מע"מ אפס לרוכשי דירה ראשונה והיא הסתיימה בסוף 2014, עם פיטוריו מהממשלה והקדמת הבחירות. באותה שנה נרשמה ירידה חדה במספר הדירות החדשות שנמכרו וקצב עליית מחירי הדירות הואט מרמה של 9% באמצע 2014 לרמה של 4% בסופה. כישלון הממשלה למלא הבטחתה החזירה מהר את מחירי הדיור לקצב שנתי של כ-9%.</p>
+
+                        <p>התקופה השלישית של חוסר וודאות היא התקופה נוכחית. מזה כשנה נרשמת ירידה מתמשכת בביקוש לדירות חדשות ובחמשת החודשים האחרונים נרשמה ירידה מצטברת של 2.15% במחירי הדירות.</p>
+                        <p>האם אנו עומדים בפתחה של תקופה המציינת שינוי מגמה, או שבדומה לשני התקופות הקודמות ישוב שוק הדיור לסורו? לפני שמנסים לענות, חשוב להפריך הנחה רווחת, הקושרת קשר ישיר בין מספר התחלות הבנייה למחירי הדירות. בפועל, קשר זה הינו רופף וכמעט בלתי ניתן להוכחה. מרבית התחלות בנייה הן דירות שכבר נמכרו והן אינן משפיעות על היצע הדירות העומד למכירה ולא גורעות מהביקוש לדירות.</p>
+                        <img src="img/blog/fiftch-article-2.jpg"alt="#">
+                        <p>ההשפעה של התחלות הבנייה על מחירי הדירות עוברת דרך ההשפעה העתידית על מספר הדירות שבנייתן נסתיימה, שמשפיע בתורו על ההיצע והביקוש בשוק השכירויות ועל התשואה על ההון המתקבלת מרכישת דירה להשקעה. ירידה חדה בהתחלות הבנייה מצביע רק על דבר אחד - לא מתבצעות מספיק מכירות בפרויקטים עם היתר בנייה כדי להצדיק את התחלת בנייתם.</p>
+                        <p>שלוש הגורמים העיקריים המשפיעים על מחירי הדירות הינם: מספר היתרי הבנייה, הפער בין ריבית
+                            (Carry Tradeהמימון לתשואה המתקבלת ברכישת דירה להשקעה (
+                            ומספר חודשי ההיצע בשוק הדירות החדשות.
+                        </p>
+                        <p class="h4">היתרי בנייה: הגענו לשיווי משקל</p>
+                        <p>מספר הדירות המתווסף מדי שנה להיצע הדירות העומד למכירה, נגזר ממספר הדירות שהתקבלו לגביהן היתרי בנייה. קבלת היתר בנייה, שהוציאה הרשות המקומית, מאפשרת ליזם להתחיל בתהליך השיווק ובעצם מגדירה את הדירה כ'דירה על המדף'. מכירת דירה לאחר היתר, גם אם היא נמכרת 'על הנייר', גורעת מהביקוש לדירות, ללא קשר לתאריך התחלת הבנייה. לפיכך, תחת ההנחה שקצב צמיחת האוכלוסייה נותר יציב ובכל שנה מצטרפים למשק כ-50 אלף בתי אב, זהו מספר היתרי הבנייה המשקף מצב של שיווי משקל בין היצע לביקוש בשוק הדירות החדשות (להוציא משקיעים).
+                            לאורך תקופה ממושכת של שנים, מספר היתרי הבנייה בישראל היה נמוך מרף ה-50 אלף דירות. כפועל יוצא, נוצר מחסור בהיצע דירות שדחף לעליית מחירים. אולם, בשלוש השנים האחרונות (2015-2017), מספר הדירות שקבלו היתרי בנייה עומד על רמה ממוצעת של 53 אלף דירות - רמה המדביקה את הביקוש הנובע מהתווספות של משקי בית. לפיכך, להוציא את רוכשי דירה שנייה ומעלה להשקעה, שוק הדירות החדשות נמצא מזה שלוש שנים בשיווי משקל הגובל בעודף היצע. אמנם, ניתן לטעון כי על ההיצע להדביק חוסר של שנים עברו, אולם טענה זו לא יכולה לעמוד אחרי שלוש שנים של עודף בשוק הדירות.
+                        </p>
+                        <img src="img/blog/fiftch-article-3.png" alt="">
+                        <p class="h4">:Carry Trade  התזרים הפך שלילי</p>
+                        <p>כאן, צד המשקיעים בא לידי ביטוי. כאשר בוחנים את כדאיות רכישה של דירה למטרות השקעה, נהוג להשוואת את התשואה הצפויה להתקבל לאלטרנטיבה - תשואה המתקבלת מהשקעה בשוק המניות או באג"ח מדינה. אולם, מאחר ורכישת דירה להשקעה מתבצעת במינוף, שכמעט לא זמין למשקיע הלא מתוחכם בשוק ההון ולאור הפערים במיסוי, שני אפיקי השקעה אלה אינם ברי השוואה.</p>
+                        <p>לפיכך, בחינת כדאיות ההשקעה בשוק הדיור צריכה להיעשות על פי קריטריונים מימוניים בלבד. </p>
+                        <p>קרי, עלות המימון למול התשואה המקבלת על ההשקעה.</p>
+                        <p>באמצע 2009, לאחר תחילת עידן ההרחבות המוניטאריות, נפלה הריבית הממוצעת על המשכנתאות מתחת לתשואה המתקבלת מרכישת דירה והשכרתה. כפועל יוצא, רכישת ממונפת של דירה להשקעה יצרה למשקיע תזרים חיובי בכל חודש (Positive Carry). זאת, מעבר לתשואה המתקבלת על ההון מעליית ערך הדירה.</p>
+                        <p>ב-2017, לאחר שבע שנים, חזרה הריבית הממוצעת על המשכנתאות להיות גבוה יותר מהתשואה המתקבלת מרכישת דירה במינוף והשכרתה. כך, שרכישה ממונפת של דירה להשקעה יוצרת היום למשקיע תזרים שלילי בכל חודש (negative Carry). משמעות הדבר, שרכישת דירה להשקעה מצריכה השקעה של הון נוסף מעבר להון ההתחלתי, תוך צפייה לרווחי הון עתידיים עם מכירת הנכס.</p>
+                        <p>מצב זה, פועל לריסון הביקושים בשוק הדיור להשקעה. הדבר כבר קיבל ביטוי לאורך השנה האחרונה, בירידת חלקם של הדירות שנרכשו לצורכי השקעה מסך הדירות שנרכשו.</p>
+                        <img src="img/blog/fiftch-article-4.png" alt="">
+                        <p class="h4">מספר חודשי היצע: שוב מעל שנה</p>
+                        <p>לפני מספר שבועות חזרה הלמ"ס לפרסם 'מספר חודשי היצע' בשוק הדירות החדשות. נתון זה מגלם את היחס שבין סך כל הדירות שנותרו למכירה בסוף כל חודש, לבין סך כל הדירות שנמכרו במהלך החודש. כלומר, תוך כמה זמן בממוצע יצליח היזם לחסל את כל מלאי הדירות למכירה שברשותו.</p>
+                        <p>בהסתכלות היסטורית, כאשר 'מספר חודשי ההיצע' עמד על 12 חודשים ומעלה, נרשמה האטה בקצב עליית המחירים ואף ירידה. כלומר, יזם שמעריך כי לא יצליח למכור את מלאי הדירות שברשותו תוך שנה, מוכן להתפשר על המחיר ולהפך.
+                            לדוגמה, בשנים 2008-2011 - שנות הגאות הגדולה במחירי הדירות - מספר חודשי ההיצע עמד על רמה נמוכה של מתחת ל-10 חודשים ואף נגע ברמה של 7 חודשים בסוף 2010. אז, השלימו מחירי הדירות עלייה שנתית של 15%. לעומת זאת, בשתי תקופות הקיפאון ב-2011 וב-2014, מספר חודשי ההיצע עמד על 14.3 ו-16, בהתאמה, וקצב עליית המחירים התמתן עד לכדי עצירה.
+                        </p>
+                        <p>נכון לינואר 2018 מספר חודשי ההיצע עומד על 13.4 וצפוי לייצר לחץ על היזמים להקטין את מלאי הדירות שברשותם תוך התפשרות על המחיר. הדבר כבר מקבל ביטוי במדד מחירי הדירות.</p>
+                        <p>לסיכום, משקלול שלושת האינדיקטורים הנ"ל - מספר היתרי הבנייה, הפער בין ריבית המימון לתשואה
+                            ומספר חודשי ההיצע בשוק הדירות החדשות -  (Carry Trade) המתקבלת ברכישת דירה להשקעה  ובלי מילה אחת על מחיר למשתכן, עולה כי בטווח הנראה לעין ניתן להעניק סבירות גבוהה להמשך ירידה במחירי הדירות. ימים יגידו.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="fifth-section">
+            <div class="main-holder">
+                <div class="buttons">
+                    <a href="tel:03-6988888" class="mobile-hidden"><span class="phone-text">וואטס אפ עסקי</span><span class="phon-number">03-6988888</span><span class="mobile-phone"></span></a>
+                    <a href="tel:03-6988888"><span class="phone-text">דברו איתנו</span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
+                    <a href="#" id="myBtn2" ><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
+                </div>
+                <h3>בקרו אותנו ב:</h3>
+                <div class="social-section">
+                    <a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a>
+                    <a href="http://campaign.gofmans.co.il/ronson/#video-section"><span class="youtube"></span></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <!--<li><a href="#">מיקום</a></li>-->
+                        <!--<li><a href="#">אינדקס</a></li>-->
+                        <li><a href="why.html">למה פולין?</a></li>
+                        <li><a href="how.html">איך זה עובד?</a></li>
+                        <li><a href="blog.html">פרסומים</a></li>
+                        <li><a href="contacts.html">צרו קשר</a></li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <p>ההדמיות, ההנפשות והמודלים של המבנים המוצגים באתר www.ronson.co.il. דומים לאובייקט הסופי ככל שניתן, כלומר הם עשויים להיות שונים מהמקור, במראה המבנים בפועל, פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים ופונקציונליות המבנים לא ישתנו.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <!--<span class="label">Gofman creative</span>-->
+        <div class="main-holder">
+            <div class="logo-footer">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <img src="img/logo-footer2.png" alt="">
+                </a>
+            </div>
+            <div class="footer-description">
+                <!--<p><strong>ופונקציונליות המבנים לא ישתנו.</strong>פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים </p>-->
+
+                <p>
+                    <!--<strong>א.מ.ו.ר - פולין נדלן בע”מ</strong>-->
+                    <!--משווקת בלעדית של רונסון בישראל<br>-->
+                    טל: 03-6988888 | מייל: office@ronson.co.il<br>
+                    מגדל אלון 2, יגאל אלון 94, תל אביב, קומה 28, מיקוד 6789140</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
