@@ -4,28 +4,12 @@
 $senderName = 'Ronson floating forms';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['ravit@gofmans.co.il', 'office@ronson.co.il', 'idan@ronson.co.il', 'alemesh@acceptic.com', 'sales1@ronson.co.il', 'israel@gofmans.co.il', 'eli@gofmans.co.il'];
-//$targetEmail = ['alemesh@acceptic.com', 'eli@gofmans.co.il'];
+//$targetEmail = ['ravit@gofmans.co.il', 'office@ronson.co.il', 'idan@ronson.co.il', 'alemesh@acceptic.com', 'sales1@ronson.co.il', 'israel@gofmans.co.il', 'eli@gofmans.co.il'];
+$targetEmail = ['alemesh@acceptic.com', 'eli@gofmans.co.il'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
 $redirectURL = $_SERVER['SERVER_NAME'];
 //****************************************
-
-
-//serchh Media title =========
-$mystr = $_SERVER['HTTP_REFERER'];
-$mystrarr = explode('?', $mystr);
-$findname = 'ck=';
-foreach ($mystrarr as $value){
-    $pos = strpos($value, $findname);
-    if($pos !== false){
-        $posMediaTitle = explode('=', $value);
-        $MediaTitle = $posMediaTitle[1];
-    }
-}
-//============================
-
-
 
 // mail content
 $ufname = $_POST['name'];
@@ -33,17 +17,12 @@ $uphone = $_POST['tel'];
 $umail = $_POST['email'];
 $description = $_POST['description'];
 
-$ProjectID = $_POST['ProjectID'];
-$Password = $_POST['Password'];
-$reffererName = $_SERVER['HTTP_REFERER'];
-
 
 // prepare message text
 $messageText =	'First Name: '.$ufname."\n".
     'Phone: '.$uphone."\n".
     'Email: '.$umail."\n".
-    'Description: '.$description."\n".
-    'Referal: '.$reffererName."\n";
+    'Description: '.$description."\n";
 
 // send email
 $senderName = "=?UTF-8?B?" . base64_encode($senderName) . "?=";
@@ -57,28 +36,6 @@ foreach ($targetEmail as $val){
     mail($val, $messageSubject, $messageText, $messageHeaders);
 }
 
-
-// BmbYY sistem ======
-
-$url = 'http://www.bmby.com/shared/AddClient/index.php';
-//$url = 'http://192.168.89.147/test.php';
-//$url = 'http://testbmby/test.php';
-$params = array(
-    'Fname' => $ufname,
-    'Phone' => $uphone,
-    'Email' => $umail,
-    'ProjectID' => $ProjectID,
-    'Password' => $Password,
-    'Referal' => $reffererName,
-    'MediaTitle' => $MediaTitle
-);
-$result = file_get_contents($url, false, stream_context_create(array(
-    'http' => array(
-        'method'  => 'POST',
-        'header'  => 'Content-type: application/x-www-form-urlencoded',
-        'content' => http_build_query($params)
-    )
-)));
 
 
 

@@ -104,6 +104,8 @@
             <p>רוצים שנחזור אליכם? השאירו פרטים ונדבר בהקדם</p>
             <form action="floating_form_sender.php" class="form form-validation" method="post">
                 <div class="form-row-wrap">
+                    <input type="hidden" value="7674" name="ProjectID">
+                    <input type="hidden" value="zxc1204" name="Password">
                     <div class="form-row">
                         <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
                     </div>
@@ -114,7 +116,7 @@
                         <input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
                     </div>
                     <div class="form-row">
-                        <textarea class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
+                        <textarea name="description" class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
                     </div>
                     <div class="form-row">
                         <input type="submit" class="btn" value="שלח">
@@ -223,7 +225,9 @@
                                 <div class="wrap">
                                     <h4>עמוס לוזון מביא את חברת הנדל"ן הפולנית רונסון לישראל</h4>
                                     <div class="date-block">
-                                        <p>מרץ 12, 2018<span> // </span>BIZportal  </p>
+                                        <!--<p>מרץ 12, 2018<span> // </span>BIZportal  </p>-->
+                                        <!--<p>מרץ 12, 2018<span> // </span>BIZportal  <span> // </span>נועם בראל  </p>-->
+                                        <p>נועם בראל<span> // </span>BIZportal  <span> // </span>מרץ 12, 2018  </p>
                                     </div>
                                     <div class="description">
                                         <p>קבוצת לוזון תפתח את נציגות חברת הנדל"ן הפולנית, רונסון, בישראל.
@@ -244,7 +248,8 @@
                                         תמורת 83 מיליון שקל
                                     </h4>
                                     <div class="date-block">
-                                        <p>אפריל 1, 2018 <span> // </span>BIZportal</p>
+                                        <!--<p>אפריל 1, 2018 <span> // </span>BIZportal<span> // </span>נועם בראל</p>-->
+                                        <p>נועם בראל <span> // </span>BIZportal<span> // </span>אפריל 1, 2018</p>
                                     </div>
                                     <div class="description">
                                         <p>קבוצת לוזון מדווחת כי החברה הבת שלה, רונסון (66%), תרכוש את פרויקט הנדל"ן הפולני "נובה",
@@ -264,7 +269,8 @@
                                 <div class="wrap">
                                     <h4>"ורשה לא נופלת מברלין": הישראלים מסתערים על הנדל"ן בפולין</h4>
                                     <div class="date-block">
-                                        <p>יולי 20, 2017<span> // </span>דה מרקר</p>
+                                        <!--<p>יולי 20, 2017<span> // </span>דה מרקר<span> // </span>ערן אזרן</p>-->
+                                        <p>ערן אזרן<span> // </span>דה מרקר<span> // </span>יולי 20, 2017</p>
                                     </div>
                                     <div class="description">
                                         <p>לאחר המשבר של 2008, טייקוני הנדל"ן הישראלים שוב מעזים לבחון את הפוטנציאל הקיים בשוק הנדל"ן הפולני ■ עם צמיחה של 3.5% בשנה, אבטלה ברמה של 5% ומטבע חזק - פולין נהפכה ליעד כלכלי נחשק: "שיעורי הרווחיות שם גבוהים בהשוואה למדינות אירופה ולישראל"</p>
@@ -281,7 +287,8 @@
                                 <div class="wrap">
                                     <h4>פולין: גן עדן למשקיעים</h4>
                                     <div class="date-block">
-                                        <p>אוקטובר 31, 2017<span> // </span> כלכליסט</p>
+                                        <!--<p>אוקטובר 31, 2017<span> // </span> כלכליסט<span> // </span>יובל גולן</p>-->
+                                        <p>יובל גולן<span> // </span> כלכליסט<span> // </span>אוקטובר 31, 2017</p>
                                     </div>
                                     <div class="description">
                                         <p>שיאי הבנייה, הנוכחות של תאגידים גדולים במדינה, המיקום על המפה האירופית ותכנית החומש הממשלתית: כל הסיבות לקנות נכסים ברפובליקה הפולנית</p>
@@ -298,7 +305,8 @@
                                 <div class="wrap">
                                     <h4>שלוש הוכחות לכך שמחירי הדירות ימשיכו לרדת</h4>
                                     <div class="date-block">
-                                        <p>מאי 14, 2018 <span> // </span> גלובס</p>
+                                        <!--<p>מאי 14, 2018 <span> // </span> גלובס<span> // </span>משה קאשי</p>-->
+                                        <p>משה קאשי <span> // </span> גלובס<span> // </span>מאי 14, 2018 </p>
                                     </div>
                                     <div class="description">
                                         <p>היתרי הבנייה כבר שלוש שנים מעל נקודת שיווי המשקל, התשואה מהשכרת דירה נמוכה כיום מעלות המימון, ומספר החודשים שדירה צפויה לעמוד על המדף גבוה משנה ● אל תופתעו מנתוני הלמ"ס שיתפרסמו מחר</p>

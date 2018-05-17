@@ -275,6 +275,7 @@
               border-bottom: none
         .image
           margin: 0 0 15px
+          max-width: 365px
         .text-block
           text-align: right
           max-width: 370px
@@ -283,11 +284,14 @@
           margin-bottom: 0
 
           .button
-            display: none
+            //display: none
+            width: 100%
 
     .single-page
-      background-image: url(../img/blog/how-bg.png)
-      background-size: contain
+      //background-image: url(../img/blog/how-bg.png)
+      //background-size: contain
+      .heights
+        height: auto
       .item
         max-width: 770px
 
@@ -698,6 +702,15 @@
         &:after
           left: 42%
 
+    .link-url
+      font-size: 10px
+    .link
+      &:before
+        width: 6px
+        height: 6px
+      &:after
+        width: 6px
+        height: 6px
 
 
 

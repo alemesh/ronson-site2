@@ -80,6 +80,31 @@ ul
 	margin: 0 auto
 	padding: 0 35px
 	position: relative
+.link
+  position: relative
+  margin-left: 22px
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: -20px
+    width: 8px
+    height: 8px
+    border-left: 1px solid #337ab7
+    border-top: 1px solid #337ab7
+    //z-index: 99999
+    transform: translateY(-50%) rotate(-45deg)
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: -10px
+    width: 8px
+    height: 8px
+    border-left: 1px solid #337ab7
+    border-top: 1px solid #337ab7
+    //z-index: 99999
+    transform: translateY(-50%) rotate(-45deg)
 
 //======= floating form =====================
 .sticky
@@ -1329,14 +1354,17 @@ ul
 			flex-direction: column
 			//align-items: center
 		.item
-			min-height: 200px
+			//min-height: 200px
 			position: relative
 			display: flex
 			direction: rtl
 			margin: 13px 15px
 		.image
-			max-width: 365px
+			//max-width: 365px
+			max-width: 420px
+			max-height: 240px
 			margin: 0 0 0 30px
+			overflow: hidden
 		.text-block
 			padding: 0
 			display: flex
@@ -1361,6 +1389,7 @@ ul
 					color: rgb(62, 62, 62)
 					line-height: 1.2
 			.button
+				margin-top: 10px
 				position: relative
 				//display: inline-block
 				width: 140px
@@ -1375,9 +1404,10 @@ ul
 				font-size: 17px
 				color: rgb(255, 255, 255)
 				line-height: 1.2
+				transition: all 0.3s ease
 				&:hover
-					transition: all 0.5s ease
-					color: black
+					//color: black
+					background: #b6171d
 
 	.nav-section
 		margin: 90px 0
@@ -1430,12 +1460,22 @@ ul
 //================= SINGLE PAGE =========================
 
 .single-page
-	background-image: url(../img/blog/bg-single.png)
-	background-size: cover
-	background-repeat: no-repeat
+	//background-image: url(../img/blog/bg-single.png)
+	//background-size: cover
+	//background-repeat: no-repeat
 	width: 100%
 	min-height: 500px
 	position: relative
+	.bg-opasiti
+		position: absolute
+		top: 0
+		left: 0
+		background-image: url(../img/blog/bg-single.png)
+		background-size: cover
+		background-repeat: no-repeat
+		min-height: 800px
+		width: 100%
+		opacity: .5
 	.main-holder
 		max-width: 1000px
 	.heights

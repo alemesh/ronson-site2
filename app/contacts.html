@@ -104,6 +104,8 @@
             <p>רוצים שנחזור אליכם? השאירו פרטים ונדבר בהקדם</p>
             <form action="floating_form_sender.php" class="" method="post">
                 <div class="form-row-wrap">
+                    <input type="hidden" value="7674" name="ProjectID">
+                    <input type="hidden" value="zxc1204" name="Password">
                     <div class="form-row">
                         <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
                     </div>
@@ -114,7 +116,7 @@
                         <input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
                     </div>
                     <div class="form-row">
-                        <textarea class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
+                        <textarea name="description" class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
                     </div>
                     <div class="form-row">
                         <input type="submit" class="btn" value="שלח">
@@ -191,6 +193,8 @@
                         </div>
                         <form action="floating_form_sender.php" class="form form-validation" method="post">
                             <div class="form-row-wrap">
+                                <input type="hidden" value="7674" name="ProjectID">
+                                <input type="hidden" value="zxc1204" name="Password">
                                 <div class="form-row">
                                     <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
                                 </div>
@@ -201,7 +205,7 @@
                                     <input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
                                 </div>
                                 <div class="form-row hidden-textarea">
-                                    <textarea class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
+                                    <textarea name="description" class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
                                 </div>
                                 <div class="form-row">
                                     <input type="submit" class="btn" value="שלח">
