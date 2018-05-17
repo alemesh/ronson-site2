@@ -1,0 +1,1024 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1550px)
+    .third-section
+      &:after
+        width: 113%
+      .title-section
+        p
+          margin-left: 1180px
+    .why-page
+      .text-section
+        //margin: 180px 15px 130px
+      .layer-bg2
+        display: none
+
+
+@media only screen and (max-width : 1370px)
+    .main
+      .home-header
+        //min-height: 500px
+        min-height: 536px
+        background-size: contain
+      .rectangle-right
+        right: -600px
+      .content
+        padding-top: 32px
+      .title
+        h1
+          font-size: 64px
+        p
+          font-size: 45px
+      .red-label
+        p
+          font-size: 23px
+      .label
+        bottom: 38%
+
+    .third-section
+      &:after
+        width: 122%
+      .title-section
+        p
+          margin-left: 1070px
+
+    .single-page
+      .corner-bg
+        display: none
+
+
+@media only screen and (max-width : 1300px)
+    .section-best-sellers
+      .items-list
+        li
+          width: 25%
+          &:last-child
+            display: none
+
+    .third-section
+      padding: 30px 0 15px
+      min-height: 450px
+      &:after
+        content: none
+      .title-section
+        position: relative
+        //text-align: center
+        //margin: 0 auto
+        p
+          text-align: center
+          margin: 0 auto
+          color: black
+          font-family: "Heebo-Bold"
+          font-size: 50px
+        span
+          display: inline
+          font-size: 50px
+      li
+        width: 25%
+
+    .wrap-fourth-section
+      padding-top: 70px
+
+    .contacts-page
+      .left-section
+        .first-block
+          min-width: 100%
+        .second-block
+          min-width: 100%
+
+    .why-page
+      .text-section
+        max-width: 650px
+        margin: 180px 15px 0
+      .content
+        margin-bottom: 70px
+      .layer-bg2
+        display: none
+
+    .how-page
+      .fourth-section2
+        .wrap-fourch-section-left-block
+          order: 2
+          .wrap-content
+            width: 375px
+            p
+              font-size: 20px
+        .main-holder
+          .wrap-holder
+            flex-direction: column
+            align-items: center
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+    .header-conteiner
+      .info-left
+        .head-hidden
+          display: none
+
+    .main
+      .rectangle-right
+        right: -750px
+      .home-header
+        background-size: cover
+      .content
+        padding-top: 100px
+
+    .footer
+      .main-holder
+        justify-content: center
+        flex-direction: column
+        align-items: center
+      .logo-footer
+        position: relative
+        top: auto
+        left: auto
+        margin: 20px 0 0
+        width: 110px
+        img
+          max-width: 100%
+      .footer-description
+        text-align: center
+        font-size: 12px
+        strong
+          font-size: 15px
+
+
+
+    .main
+      .single-page
+        .content
+          padding-top: 10px
+
+    .why-page
+      .layer-bg
+        display: none
+      .layer-bg3
+        display: none
+      .main-holder
+        justify-content: center
+        margin: 0 15px
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    .header-conteiner
+      .nav-section
+        ul
+          display: none
+          position: absolute
+          top: 63px
+          //right: 0
+          z-index: 999
+          //max-width: 100%
+          width: 100%
+          margin: 0 auto
+          color: white
+          background-color: rgb(228, 42, 55)
+          opacity: 0.902
+          li
+            display: flex
+            justify-content: center
+            padding: 11px
+            &:hover
+              border-bottom: none
+              a
+                color: black
+            &:first-child
+              padding-top: 20px
+            &:last-child
+              padding-bottom: 20px
+
+          a, a:hover
+            text-decoration: none
+            color: white
+
+    .form-hold
+      h3
+        font-size: 22px
+
+    .section-best-sellers
+      padding-top: 30px
+      h3
+        text-align: center
+        margin-bottom: 30px
+      .items
+        display: flex
+        justify-content: center
+      .items-list
+        width: 500px
+        li
+          width: 50%
+          margin-bottom: 25px
+
+      .video
+        margin: 40px 0
+        .video-controll
+          width: 500px
+          height: 100%
+
+    .third-section
+      img
+        width: 75px
+        height: 77px
+      li
+        padding: 0 10px
+        &:after
+          content: none
+
+    .wrap-fourth-section
+      padding-top: 50px
+
+
+    .blog-page
+      background-image: url(../img/blog/how-bg.png)
+      background-size: contain
+      .title-section
+        margin-top: 40px
+        margin-bottom: 40px
+        width: 100%
+        flex-wrap: wrap
+        //justify-content: center
+        //align-items: center
+      .contacts-block
+        //justify-content: center
+        align-items: center
+        width: 100%
+        margin: 0 auto
+        order: 1
+        .title
+          text-align: center
+      .text-block
+        align-items: center
+        text-align: center
+        margin-bottom: 25px
+        h1
+          margin-bottom: 25px
+        .button
+          margin-top: 10px
+
+      .item-section
+        .item
+          flex-direction: column
+          align-items: center
+          margin: 10px 15px
+          &:last-child
+            .text-block
+              border-bottom: none
+        .image
+          margin: 0 0 15px
+          max-width: 365px
+        .text-block
+          text-align: right
+          max-width: 370px
+          border-bottom: 2px solid #dfdfdf
+          padding-bottom: 15px
+          margin-bottom: 0
+
+          .button
+            //display: none
+            width: 100%
+
+    .single-page
+      //background-image: url(../img/blog/how-bg.png)
+      //background-size: contain
+      .heights
+        height: auto
+      .item
+        max-width: 770px
+
+    .why-page
+      background-image: url(../img/blog/how-bg.png)
+      background-size: contain
+
+    .contacts-page
+      .wrap-contacts
+        margin-top: 50px
+      .left-section
+        margin-bottom: 50px
+        margin-top: 0
+        order: 2
+        width: 100%
+        display: flex
+        justify-content: center
+        .first-block
+          min-width: 80%
+        .second-block
+          min-width: 80%
+      .right-section
+        margin: 0 0 30px
+        order: 1
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        .wrap-right-section
+          text-align: center
+        .form
+          width: 80%
+
+    .how-page
+      .how-buttons
+        .button-item
+          margin: 20px 15px 0
+      .fourth-section2
+        .wrap-fourch-section
+          width: 100%
+        .main-holder
+          padding: 0 15px
+        .wrap-fourch-section-left-block
+          .wrap-content
+            p
+              text-align: center
+
+    .form-hold
+      .wrap-btn
+        position: relative
+        &:after
+          left: 33%
+
+    .floating-logo
+      display: none
+    .sticky
+      display: none
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    .main
+      .rectangle-right
+        display: none
+      .rectangle-left
+        display: none
+      .home-header
+        min-height: 660px
+      .content
+        padding-top: 50px
+      .title
+        h1
+          font-size: 60px
+        p
+          font-size: 40px
+      .red-label
+        p
+          font-size: 20px
+
+    .header-conteiner
+      .nav-section
+        min-height: 75px
+        ul
+          top: 75px
+      .logo
+        top: 51px
+        width: 173px
+      .info-left
+        margin-left: 0
+        padding-left: 0
+        li
+          &:first-child
+            padding-left: 20px
+            background: white
+
+    .form-hold
+      //padding-top: 450px
+      //position: static
+      background: black
+      background: linear-gradient(to bottom,  rgba(0,0,0,0)  0%, rgba(0,0,0,1)  100%)
+
+      .form-row
+        width: 100%
+        margin-bottom: 15px
+
+      .form-control
+        height: 45px
+        font-size: 18px
+
+      .btn
+        height: 55px
+
+      .boxes-section
+        padding: 0 50px
+        font-size: 18px
+
+        li
+          padding: 0 40px
+
+        span
+          max-width: 180px
+          margin: 0 auto
+      .bottom-img
+        margin: 0 -130px
+
+      .footer-holder
+        font-size: 12px
+
+      .wrap-btn
+        position: relative
+        &:after
+          left: 44%
+
+    .third-section
+      li
+        width: 50%
+        margin-bottom: 30px
+      .text
+        max-width: 140px
+      .title-section
+        p
+          font-size: 40px
+        span
+          font-size: 40px
+
+    .wrap-fourth-section
+      padding-top: 0
+      h3
+        display: none
+    .fourth-section
+      background-color: #d91b24
+      opacity: .9
+      //background-image: url(../img/bg-4-mobi.png)
+      //background-image: url(../img/bg4-mobi.png)
+      background-image: url(../img/b5.png)
+      background-size: cover
+      padding-top: 0
+      min-height: 440px
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      text-align: center
+      align-items: center
+
+      overflow: hidden
+      max-width: 1300px
+      margin: 0 auto
+      padding: 30px 35px 0
+      position: relative
+
+      article
+        position: relative
+        z-index: 999
+        //display: inline-block
+        border: none
+        font-size: 16px
+        color: white
+        padding: 5px
+
+        strong
+          font-weight: bold
+          font-size: 35px
+
+      .rd-projects, .rd-exp-years, .rd-completed, .rd-residents, .rd-gpw-years
+        top: auto
+        left: auto
+        height: auto
+        min-height: 125px
+        width: 50%
+      .rd-exp-years
+        order: 1
+        width: 60%
+        strong
+          font-size: 56px
+          margin-bottom: 15px
+          text-align: center
+
+    .fifth-section
+      //background: white
+      .buttons
+        .mobile-hidden
+          display: flex
+        margin: 70px 0 5px
+        a
+          min-width: 130px
+          font-size: 14px
+          margin: 0
+          transform: skewX(0deg)
+          background: #ececec
+        span
+          transform: skewX(0deg)
+        .phon-number
+          margin-right: auto
+        .column
+          display: block
+          transform: skewX(0deg)
+        .mail
+          top: -30px
+          right: 43px
+          width: 45px
+          height: 45px
+          background-image: url(../img/mail4.png)
+        .phone
+          top: -30px
+          right: 43px
+          width: 45px
+          height: 45px
+          background-image: url(../img/phone2.png)
+      .nav
+        margin: 20px 0 0
+      .description
+        margin: 40px 15px 30px
+
+    .main
+      .label
+        display: none
+    .footer
+      .label
+        display: block
+        &:after
+          top: 52%
+
+    .blog-page
+      .corner-bg
+        display: none
+      .text-block
+        width: 330px
+        h1
+          font-size: 35px
+        p
+          font-size: 18px
+      .item-section
+        .image
+          max-width: 330px
+        .text-block
+          width: 330px
+          h4
+            font-size: 20px
+          .description
+            p
+              font-size: 16px
+
+    .single-page
+      .item
+        max-width: 645px
+      .text-section
+        h1
+          font-size: 31px
+    .slick-next
+      right: -15px
+      width: 35px
+      height: 70px
+    .slick-prev
+      left: -15px
+      width: 35px
+      height: 70px
+
+    .why-page
+      .corner-bg
+        display: none
+      .layer-bg2
+        display: none
+      .text-section
+        margin: 40px 15px
+        h3
+          width: 100%
+      .content
+        margin-bottom: 0
+
+
+    .contacts-page
+      background-image: url(../img/blog/bg-blog2.png)
+      background-size: contain
+      .corner-bg
+        display: none
+      .left-section
+        .first-block
+          min-width: 90%
+        .second-block
+          min-width: 90%
+      .right-section
+        .form
+          min-width: 90%
+
+    .how-page
+      .corner-bg
+        display: none
+      .how-it-works
+        padding: 50px 0
+        background-size: contain
+      .how-title
+        margin-bottom: 30px
+      .fourth-section2
+        padding: 60px 0
+        .main-holder
+          .title
+            font-size: 30px
+        .wrap-fourch-section
+          align-items: center
+        .item-fourt-section
+
+        h4
+          font-size: 25px
+          margin-bottom: 25px
+        p
+          font-size: 23px
+        .img-fourtch-section
+          width: 100%
+          margin-bottom: 30px
+          display: flex
+          justify-content: center
+          align-items: center
+        .desription-fourtch-section
+          width: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-direction: column
+          text-align: center
+        .item-fourt-section
+          flex-wrap: wrap
+          border-bottom: none
+
+    .toggle-mnu
+      top: 13px
+
+@media only screen and (max-width : 600px)
+    .section-best-sellers
+      background-image: none !important
+      background: white
+      min-height: 870px
+      .items-list
+        width: 380px
+        img
+          width: 180px
+          height: 150px
+        .bot-title
+          width: 180px
+        .bot-description
+          width: 180px
+        .hover-text
+          height: 148px
+          &:hover
+            .hover-btn
+              bottom: 20px
+          .hover-btn
+            display: none
+        .hover-inner
+          bottom: 90px
+      .video
+        margin-top: 20px
+        .video-controll
+          width: 375px
+
+    .modal-content
+      width: 450px
+    .modal
+      padding-top: 130px
+
+    .single-page
+      .text-section
+        h1
+          font-size: 25px
+      .item
+        max-width: 485px
+    .main
+      .single-page
+        .content
+          padding-top: 20px
+          padding-bottom: 70px
+
+    .contacts-page
+      .left-section
+        h4
+          font-size: 18px
+        p
+          font-size: 14px
+      .right-section
+        .form-control
+          font-size: 21px
+        .btn
+          font-size: 21px
+
+    .form-hold
+      .wrap-btn
+        position: relative
+        &:after
+          left: 42%
+
+    .link-url
+      font-size: 10px
+    .link
+      &:before
+        width: 6px
+        height: 6px
+      &:after
+        width: 6px
+        height: 6px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    .header-conteiner
+      .info-section
+        font-size: 15px
+      .info-right
+        margin-right: 0
+
+
+    .main
+      .home-header
+        background-image: url(../img/background-mobile.png) !important
+        min-height: 775px
+
+      .title
+        h1
+          font-size: 43px
+        p
+          font-size: 29px
+      .red-label
+        p
+          font-size: 18px
+          margin: 12px 20px
+
+    .form-hold
+      h3
+        font-size: 19px
+      .wrap-btn
+        position: relative
+        &:after
+          left: 40%
+
+    .section-best-sellers
+      min-height: 790px
+      .items
+        width: 100%
+      .items-list
+        width: 100%
+        margin: 0 -5px
+        li
+          padding: 0 5px
+        img
+          //width: 155px
+          width: 100%
+          height: 125px
+          padding: 0 4px
+        .bot-title
+          width: 100%
+          font-size: 12px
+        .bot-description
+          width: 100%
+          font-size: 13px
+        .hover-inner
+          font-size: 10px
+          padding: 0
+          bottom: 110px
+        a
+          strong
+            font-size: 12px
+      .video
+        padding: 0 5px
+        .video-controll
+          width: 100%
+
+
+    .main-holder
+      padding: 0 25px
+
+    .third-section
+      background-image: url(../img/bg-mobile-3-section.png)
+      img
+        width: 65px
+        height: 67px
+      .text
+        font-size: 16px
+      .title-section
+        p
+          font-size: 30px
+        span
+          font-size: 30px
+      ul
+        margin-top: 40px
+
+    .fourth-section
+      //background-color: rgb(217, 27, 36)
+      //opacity: .9
+      //background-image: url(../img/bg-4-mobi.png)
+      background-size: cover
+
+
+    .fifth-section
+      .buttons
+        .mobile-phone
+          right: 44px
+      .buttons a
+        min-width: 105px
+        .mail
+          top: -30px
+          right: 42px
+        .phone
+          top: -30px
+          right: 42px
+
+    .footer
+      .footer-description
+        font-size: 9px
+        strong
+          font-size: 12px
+
+    .blog-page
+      .item-section
+        .items
+          justify-content: center
+          align-items: center
+        .item
+          max-width: 300px
+        .image
+          max-width: 300px
+          width: 100%
+        .text-block
+          max-width: 300px
+      .contacts-block
+        .contacts
+          min-width: 300px
+      .nav-section
+        margin: 30px 0
+        ul
+          padding: 0
+
+    .modal
+      padding-top: 20px
+    .modal-content
+      width: 350px
+
+    .single-page
+      .variable-width
+        margin: 40px 0 40px
+      .item
+        max-width: 410px
+      .slider-section
+        margin: 0
+      .text-section
+        margin: 0
+        h1
+          font-size: 21px
+        .date-single
+          font-size: 18px
+    .slick-next
+      right: -15px
+      width: 30px
+      height: 50px
+    .slick-prev
+      left: -15px
+      width: 30px
+      height: 50px
+
+    .main
+      .why-page
+        .content
+          padding-top: 30px
+    .why-page
+      .text-section
+        margin: 40px 0
+        h1
+          font-size: 31px
+          text-align: center
+        .description-why
+          margin-top: 35px
+          p
+            font-size: 18px
+            margin-top: 0
+
+    .contacts-page
+      min-height: 620px
+      .hidden-textarea
+        display: none
+      .left-section
+        .first-block
+          min-width: 100%
+          padding: 15px
+        .second-block
+          min-width: 100%
+      .right-section
+        .form
+          min-width: 100%
+
+    .how-page
+      .how-buttons
+        .button-item
+          width: 100%
+          margin: 20px 0 0
+      .fourth-section2
+        padding: 50px 0 0
+        .wrap-fourch-section-left-block
+          margin: 0
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+    .single-page
+      .item
+        max-width: 330px
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+    .header-conteiner
+      .info-right
+        li
+          padding: 0 4px
+          &:first-child
+            padding-right: 15px
+    .main
+      .red-label
+        p
+          font-size: 13px
+      .title
+        p
+          font-size: 25px
+
+    .section-best-sellers
+      .items-list
+        a
+          strong
+            font-size: 10px
+    .section-best-sellers
+      .items-list
+        .hover-inner
+          font-size: 8px
+    .fourth-section
+      .rd-exp-years
+        width: 80%
+    .modal-content
+      width: 300px
+      min-height: 470px
+      .form-control
+        height: 40px
+      .form-control.textarea
+        height: 100px
+    .modal
+      padding-top: 10px
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2000px)
+    .third-section
+      &:after
+        background: url(../img/rectangle-third-section.png) center right no-repeat
+        width: 100%
+        top: 0
+      .title-section
+        top: 0
+        left: -380px
+        p
+          margin-left: 0
+          text-align: right
+          margin: 0
+    .main
+      .home-header
+        background-size: cover
+        background-position: bottom
+
+    .wrap-fourth-section
+      padding-top: 120px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2560px)
+    .third-section
+      &:after
+        right: 250px
+      .title-section
+        left: -625px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 3072px)
+    .third-section
+      &:after
+        right: 480px
+      .title-section
+        left: -850px

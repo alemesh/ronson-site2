@@ -36,6 +36,11 @@ $(function() {
     var btn7 = document.getElementsByClassName("myBtns")[8];
     var btn71 = document.getElementsByClassName("myBtns")[9];
 
+    // var btn8 = document.getElementsByClassName("myBtns")[10];
+    // var btn9 = document.getElementsByClassName("myBtns")[11];
+    // var btn10 = document.getElementsByClassName("myBtns")[12];
+    // var btn11 = document.getElementsByClassName("myBtns")[13];
+
 
 // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -99,6 +104,19 @@ $(function() {
     btn71.onclick = function() {
         modal.style.display = "block";
     };
+
+    // btn8.onclick = function() {
+    //     modal.style.display = "block";
+    // };
+    // btn9.onclick = function() {
+    //     modal.style.display = "block";
+    // };
+    // btn10.onclick = function() {
+    //     modal.style.display = "block";
+    // };
+    // btn11.onclick = function() {
+    //     modal.style.display = "block";
+    // };
 //============ finish modal ===============
 
 

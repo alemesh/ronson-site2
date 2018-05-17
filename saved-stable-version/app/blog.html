@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Ronson</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+
+
+    <!-- Facebook Pixel Code -->
+
+    <script>
+
+        !function(f,b,e,v,n,t,s)
+
+
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+
+            n.queue=[];t=b.createElement(e);t.async=!0;
+
+
+            t.src=v;s=b.getElementsByTagName(e)[0];
+
+
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '782731271921380');
+
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1"
+
+             src="https://www.facebook.com/tr?id=782731271921380&ev=PageView
+
+&noscript=1"/>
+
+    </noscript>
+
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google AdWords: 808590525 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-808590525"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-808590525');
+    </script>
+
+</head>
+
+<body>
+
+<div class="wraper">
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--<h3> השאירו פרטים</h3>-->
+            <!--<p>לפגישה וקבלת פרטים אודות דירות להשקעה בטוחה בפולין,</p>-->
+            <h3>צרו קשר</h3>
+            <p>רוצים שנחזור אליכם? השאירו פרטים ונדבר בהקדם</p>
+            <form action="floating_form_sender.php" class="form form-validation" method="post">
+                <div class="form-row-wrap">
+                    <input type="hidden" value="7674" name="ProjectID">
+                    <input type="hidden" value="zxc1204" name="Password">
+                    <div class="form-row">
+                        <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
+                    </div>
+                    <div class="form-row">
+                        <input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+                    </div>
+                    <div class="form-row">
+                        <input name="email" class="form-control" required type="email" placeholder="*דוא”ל">
+                    </div>
+                    <div class="form-row">
+                        <textarea  class="form-control textarea" placeholder="תוכן הפנייה"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" class="btn" value="שלח">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="header">
+        <div class="header-conteiner">
+            <div class="logo">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <img src="img/logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="info-section">
+                <ul class="info-left">
+                    <li><a href="tel:03-6988888"><span class="head-hidden">או דברו איתנו: </span><span class="phon-number">03-6988888</span></a></li>
+                    <li class="head-hidden"><a href="#" id="myBtn">יש לכם שאלות? <span>לחצו</span></a></li>
+                    <li class="head-hidden hover-red"><a href="mailto:office@ronson.co.il"><span class="post-card"></span></a></li>
+                </ul>
+                <ul class="info-right">
+                    <!--<li><a href="#">המועדפים עלי (0)</a></li>-->
+                    <li><a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a></li>
+                    <li><a href="http://campaign.gofmans.co.il/ronson/#video-section"><span class="youtube"></span></a></li>
+                </ul>
+            </div>
+            <div class="nav-section" id="form-scrol">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <div class="floating-logo"></div>
+                </a>
+                <ul class="main-mnu">
+                    <!--<li><a href="#">מיקום</a></li>-->
+                    <!--<li><a href="#">אינדקס</a></li>-->
+                    <li><a href="why.html">למה פולין?</a></li>
+                    <li><a href="how.html">איך זה עובד?</a></li>
+                    <li><a href="blog.html">פרסומים</a></li>
+                    <li><a href="contacts.html">צרו קשר</a></li>
+                </ul>
+                <div class="togle-wrap">
+                    <a href="#" class="toggle-mnu hidden-md hidden-lg"><span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+
+
+
+        <div class="blog-page">
+            <div class="corner-bg"></div>
+            <div class="main-holder">
+                <div class="title-section">
+                    <div class="contacts-block">
+                        <div class="title">
+                            <h3>כאן לכל שאלה שלכם!</h3>
+                        </div>
+
+                        <div class="contacts">
+                            <!--<p class="first">עידן רדושנסקי</p>-->
+                            <!--<p>מנהל מכירות ושיווק רונסון ישראל</p>-->
+                            <p>מכירות ושיווק רונסון ישראל</p>
+                            <!--<a href="tel:0523255567"><p><span class="phone"></span>0523255567</p></a>-->
+                            <a href="tel:03-6988888"><p><span class="phone"></span>03-6988888</p></a>
+                            <!--<a href="mailto:idan@ronson.co.il"><p><span class="mail"></span>idan@ronson.co.il</p></a>-->
+                            <a href="mailto:office@ronson.co.il"><p><span class="mail"></span>office@ronson.co.il</p></a>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <h1>עיתונות ופרסום</h1>
+                        <p>סקרנים לגביי השקעה?<br>
+                            אנו מזמינים אתכם ליצור אתנו קשר, לקרוא ולהכיר טוב יותר את פעילות החברה, דרך כתבות עיתונות, מאמרים וחדשות חמות מהשטח</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-section">
+                <div class="main-holder">
+                    <div class="items">
+                        <!--<div class="item">-->
+                            <!--<div class="image">-->
+                                <!--<a href="single.html"><img src="img/blog/item-thumb.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="text-block">-->
+                                <!--<div class="wrap">-->
+                                    <!--<h4>להשקיע חכם בורשה - כל הצעדים</h4>-->
+                                    <!--<div class="date-block">-->
+                                        <!--<p>אפריל 03, 2018  <span>//</span>  צוות רונסון</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="description">-->
+                                        <!--<p>תנאי מוקדם להסכמים שנחתמו הוא כישלונו של נשיא ורשה זכויות מקדימות המוקנות לעיר הבירה של ורשה ביחס לנכסים אלה. ההסכמים המובטחים יסתיימו לאחר תום תקופת החוק בת 30 הימים ביצוע זכות זו </p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                    <!--<a href="single.html" class="button"><span>לכתבה המלאה</span></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="item">
+                            <div class="image">
+                                <a href="single1.html"><img src="img/blog/main_pic_article1.jpg" alt=""></a>
+                            </div>
+                            <div class="text-block">
+                                <div class="wrap">
+                                    <h4>עמוס לוזון מביא את חברת הנדל"ן הפולנית רונסון לישראל</h4>
+                                    <div class="date-block">
+                                        <!--<p>מרץ 12, 2018<span> // </span>BIZportal  </p>-->
+                                        <!--<p>מרץ 12, 2018<span> // </span>BIZportal  <span> // </span>נועם בראל  </p>-->
+                                        <p>נועם בראל<span> // </span>BIZportal  <span> // </span>מרץ 12, 2018  </p>
+                                    </div>
+                                    <div class="description">
+                                        <p>קבוצת לוזון תפתח את נציגות חברת הנדל"ן הפולנית, רונסון, בישראל.
+                                            לחברה פורטפוליו רחב בעיר וורשה ובסביבתה
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="single1.html" class="button"><span>לכתבה המלאה</span></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="single2.html"><img src="img/blog/main-pic2.jpg" alt=""></a>
+                            </div>
+                            <div class="text-block">
+                                <div class="wrap">
+                                    <h4>רונסון של קבוצת לוזון תרכוש פרויקט מגורים בפולין
+                                        תמורת 83 מיליון שקל
+                                    </h4>
+                                    <div class="date-block">
+                                        <!--<p>אפריל 1, 2018 <span> // </span>BIZportal<span> // </span>נועם בראל</p>-->
+                                        <p>נועם בראל <span> // </span>BIZportal<span> // </span>אפריל 1, 2018</p>
+                                    </div>
+                                    <div class="description">
+                                        <p>קבוצת לוזון מדווחת כי החברה הבת שלה, רונסון (66%), תרכוש את פרויקט הנדל"ן הפולני "נובה",
+                                            תמורת כ-81.9 מיליון שקל.  לאחר הרכישה, רונסון תמשיך לנהל את הפרויקט במלואו.
+                                            הפרויקט ממקומם בעיר ורשה ומשתרע על שטח כולל של כ-24,000 מ"ר!
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="single2.html" class="button"><span>לכתבה המלאה</span></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="single3.html"><img src="img/blog/third-article-2.jpg" alt=""></a>
+                            </div>
+                            <div class="text-block">
+                                <div class="wrap">
+                                    <h4>"ורשה לא נופלת מברלין": הישראלים מסתערים על הנדל"ן בפולין</h4>
+                                    <div class="date-block">
+                                        <!--<p>יולי 20, 2017<span> // </span>דה מרקר<span> // </span>ערן אזרן</p>-->
+                                        <p>ערן אזרן<span> // </span>דה מרקר<span> // </span>יולי 20, 2017</p>
+                                    </div>
+                                    <div class="description">
+                                        <p>לאחר המשבר של 2008, טייקוני הנדל"ן הישראלים שוב מעזים לבחון את הפוטנציאל הקיים בשוק הנדל"ן הפולני ■ עם צמיחה של 3.5% בשנה, אבטלה ברמה של 5% ומטבע חזק - פולין נהפכה ליעד כלכלי נחשק: "שיעורי הרווחיות שם גבוהים בהשוואה למדינות אירופה ולישראל"</p>
+                                    </div>
+                                </div>
+                                <a href="single3.html" class="button"><span>לכתבה המלאה</span></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="single4.html"><img src="img/blog/fourth-article-1.jpg" alt=""></a>
+                            </div>
+                            <div class="text-block">
+                                <div class="wrap">
+                                    <h4>פולין: גן עדן למשקיעים</h4>
+                                    <div class="date-block">
+                                        <!--<p>אוקטובר 31, 2017<span> // </span> כלכליסט<span> // </span>יובל גולן</p>-->
+                                        <p>יובל גולן<span> // </span> כלכליסט<span> // </span>אוקטובר 31, 2017</p>
+                                    </div>
+                                    <div class="description">
+                                        <p>שיאי הבנייה, הנוכחות של תאגידים גדולים במדינה, המיקום על המפה האירופית ותכנית החומש הממשלתית: כל הסיבות לקנות נכסים ברפובליקה הפולנית</p>
+                                    </div>
+                                </div>
+                                <a href="single4.html" class="button"><span>לכתבה המלאה</span></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="single5.html"><img src="img/blog/fiftch-article-1.jpg" alt=""></a>
+                            </div>
+                            <div class="text-block">
+                                <div class="wrap">
+                                    <h4>שלוש הוכחות לכך שמחירי הדירות ימשיכו לרדת</h4>
+                                    <div class="date-block">
+                                        <!--<p>מאי 14, 2018 <span> // </span> גלובס<span> // </span>משה קאשי</p>-->
+                                        <p>משה קאשי <span> // </span> גלובס<span> // </span>מאי 14, 2018 </p>
+                                    </div>
+                                    <div class="description">
+                                        <p>היתרי הבנייה כבר שלוש שנים מעל נקודת שיווי המשקל, התשואה מהשכרת דירה נמוכה כיום מעלות המימון, ומספר החודשים שדירה צפויה לעמוד על המדף גבוה משנה ● אל תופתעו מנתוני הלמ"ס שיתפרסמו מחר</p>
+                                    </div>
+                                </div>
+                                <a href="single5.html" class="button"><span>לכתבה המלאה</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nav-section">
+                <!--<div class="main-holder">-->
+                    <!--<ul>-->
+                        <!--<li><a href="#" class="prev"></a></li>-->
+                        <!--<li><a href="#" class="page current">1</a></li>-->
+                        <!--<li><a href="#" class="page">2</a></li>-->
+                        <!--<li><a href="#" class="page">3</a></li>-->
+                        <!--<li><a href="#" class="page">4</a></li>-->
+                        <!--<li><a href="#" class="page">5</a></li>-->
+                        <!--<li><a href="#" class="page">6</a></li>-->
+                        <!--<li><a href="#" class="page">7</a></li>-->
+                        <!--<li><a href="#" class="page">8</a></li>-->
+                        <!--<li><a href="#" class="page">9</a></li>-->
+                        <!--<li><a href="#" class="page">10</a></li>-->
+                        <!--<li><a href="#" class="next"></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+
+        </div>
+
+
+
+        <div class="fifth-section">
+            <div class="main-holder">
+                <div class="buttons">
+                    <a href="tel:03-6988888" class="mobile-hidden"><span class="phone-text">וואטס אפ עסקי</span><span class="phon-number">03-6988888</span><span class="mobile-phone"></span></a>
+                    <a href="tel:03-6988888"><span class="phone-text">דברו איתנו</span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
+                    <a href="#" id="myBtn2" ><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
+                </div>
+                <h3>בקרו אותנו ב:</h3>
+                <div class="social-section">
+                    <a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a>
+                    <a href="http://campaign.gofmans.co.il/ronson/#video-section"><span class="youtube"></span></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <!--<li><a href="#">מיקום</a></li>-->
+                        <!--<li><a href="#">אינדקס</a></li>-->
+                        <li><a href="why.html">למה פולין?</a></li>
+                        <li><a href="how.html">איך זה עובד?</a></li>
+                        <li><a href="blog.html">פרסומים</a></li>
+                        <li><a href="contacts.html">צרו קשר</a></li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <p>ההדמיות, ההנפשות והמודלים של המבנים המוצגים באתר www.ronson.co.il. דומים לאובייקט הסופי ככל שניתן, כלומר הם עשויים להיות שונים מהמקור, במראה המבנים בפועל, פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים ופונקציונליות המבנים לא ישתנו.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <!--<span class="label">Gofman creative</span>-->
+        <div class="main-holder">
+            <div class="logo-footer">
+                <a href="http://campaign.gofmans.co.il/ronson">
+                    <img src="img/logo-footer2.png" alt="">
+                </a>
+            </div>
+            <div class="footer-description">
+                <!--<p><strong>ופונקציונליות המבנים לא ישתנו.</strong>פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים </p>-->
+
+                <p>
+                    <!--<strong>א.מ.ו.ר - פולין נדלן בע”מ</strong>-->
+                    <!--משווקת בלעדית של רונסון בישראל<br>-->
+                    טל: 03-6988888 | מייל: office@ronson.co.il<br>
+                    מגדל אלון 2, יגאל אלון 94, תל אביב, קומה 28, מיקוד 6789140</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
