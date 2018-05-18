@@ -6,16 +6,37 @@ $(function() {
         // return false;
     });
 
-    //video controlls
-    $('.video-controll').hover(function(){
+    // video controlls
+    $('.video-controll').hover(
+        function(){
 
         $(this).attr("controls", "controls");
 
-    },
+        },
         function () {
             $(this).removeAttr("controls");
         }
         );
+
+
+
+
+    var videoPlayer = document.getElementById('videoPlayer');
+
+    // Auto play, half volume.
+    // videoPlayer.play()
+    // videoPlayer.volume = 0.5;
+
+    // Play / pause.
+    videoPlayer.addEventListener('click', function () {
+        if (videoPlayer.paused == false) {
+            videoPlayer.pause();
+            videoPlayer.firstChild.nodeValue = 'Play';
+        } else {
+            videoPlayer.play();
+            videoPlayer.firstChild.nodeValue = 'Pause';
+        }
+    });
 
 //========= modal ==============
 
@@ -46,10 +67,12 @@ $(function() {
     var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-    btn.onclick = function() {
+    btn.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn2.onclick = function() {
+    btn2.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
 
@@ -74,34 +97,44 @@ $(function() {
     };
 
 
-    btn3.onclick = function() {
+    btn3.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn31.onclick = function() {
+    btn31.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn4.onclick = function() {
+    btn4.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn41.onclick = function() {
+    btn41.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn5.onclick = function() {
+    btn5.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn51.onclick = function() {
+    btn51.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn6.onclick = function() {
+    btn6.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn61.onclick = function() {
+    btn61.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn7.onclick = function() {
+    btn7.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
-    btn71.onclick = function() {
+    btn71.onclick = function(e) {
+        e.preventDefault();
         modal.style.display = "block";
     };
 
