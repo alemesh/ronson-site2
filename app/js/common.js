@@ -20,23 +20,26 @@ $(function() {
 
 
 
+//===================================
+//     var videoPlayer = document.getElementById('videoPlayer');
+// // console.log(videoPlayer);
+// // console.log(111);
+//     // Auto play, half volume.
+//     // videoPlayer.play()
+//     // videoPlayer.volume = 0.5;
+// if (videoPlayer !== null){
+//     // Play / pause.
+//     videoPlayer.addEventListener('click', function () {
+//         if (videoPlayer.paused == false) {
+//             videoPlayer.pause();
+//             videoPlayer.firstChild.nodeValue = 'Play';
+//         } else {
+//             videoPlayer.play();
+//             videoPlayer.firstChild.nodeValue = 'Pause';
+//         }
+//     });
+// }
 
-    var videoPlayer = document.getElementById('videoPlayer');
-
-    // Auto play, half volume.
-    // videoPlayer.play()
-    // videoPlayer.volume = 0.5;
-
-    // Play / pause.
-    videoPlayer.addEventListener('click', function () {
-        if (videoPlayer.paused == false) {
-            videoPlayer.pause();
-            videoPlayer.firstChild.nodeValue = 'Play';
-        } else {
-            videoPlayer.play();
-            videoPlayer.firstChild.nodeValue = 'Pause';
-        }
-    });
 
 //========= modal ==============
 
@@ -155,7 +158,30 @@ $(function() {
 
 
 
+    // $("form").submit(function(e) {
+    //
+    //     var ref = $(this).find("[required]");
+    //
+    //     $(ref).each(function(){
+    //         if ( $(this).val() == '' )
+    //         {
+    //             alert("Required field should not be blank.");
+    //
+    //             $(this).focus();
+    //
+    //             e.preventDefault();
+    //             return false;
+    //         }
+    //     });  return true;
+    // });
+
 });
+
+
+
+
+
+
 
 // Slick slider
 (function($) {
