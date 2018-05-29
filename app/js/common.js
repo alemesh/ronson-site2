@@ -191,22 +191,28 @@ $(function() {
 });
 
 
-$( ".btn" ).click(function() {
-    // alert(111);
+//duble click on submit button
+// $( ".btn" ).click(function() {
+//     // alert(111);
+//
+//     setTimeout(mysettime1, 5);
+//     $(this).submit();
+//
+//     setTimeout(mysettime2, 3000);
+// });
+// function mysettime1() {
+//     // $(".btn").show();
+//     $(".btn").attr('disabled','disabled');
+// }
+// function mysettime2() {
+//     // $(".btn").show();
+//     $(".btn").removeAttr('disabled');
+// }
 
-    setTimeout(mysettime1, 5);
-    $(this).submit();
 
-    setTimeout(mysettime2, 3000);
-});
-function mysettime1() {
-    // $(".btn").show();
-    $(".btn").attr('disabled','disabled');
-}
-function mysettime2() {
-    // $(".btn").show();
-    $(".btn").removeAttr('disabled');
-}
+
+
+
 
 
 
