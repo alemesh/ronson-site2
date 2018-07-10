@@ -7,16 +7,16 @@ $(function() {
     });
 
     // video controlls
-    $('.video-controll').hover(
-        function(){
-
-        $(this).attr("controls", "controls");
-
-        },
-        function () {
-            $(this).removeAttr("controls");
-        }
-        );
+    // $('.video-controll').hover(
+    //     function(){
+    //
+    //     $(this).attr("controls", "controls");
+    //
+    //     },
+    //     function () {
+    //         $(this).removeAttr("controls");
+    //     }
+    //     );
 
 
 
