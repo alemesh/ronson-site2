@@ -113,6 +113,31 @@
             flex-direction: column
             align-items: center
 
+    .about
+      .content
+        margin-bottom: 20px
+      .video-block
+        //background: rgba(230, 35, 52, .8)
+        .wrap-block
+          background:
+          flex-direction: column
+          align-items: flex-end
+        .icons-left-block
+          order: 1
+          margin-bottom: 30px
+          ul
+            li
+              margin-right: 0
+            .wrap-img
+              background: #e62334
+              padding: 5px
+            p
+              color: #3e3e3e
+        .video
+          margin-bottom: 30px
+      .layer-red
+        display: none
+
 
 
 
@@ -167,6 +192,30 @@
       .main-holder
         justify-content: center
         margin: 0 15px
+
+    .about
+      .main-holder
+        margin: 0 auto
+        padding: 0 20px
+      .text-section
+        max-width: 700px
+      .content
+        margin-bottom: 20px
+      .video-block
+        .wrap-block
+          justify-content: center
+          align-items: center
+        h3
+          text-align: center
+      .black-section
+        .wrap-section
+          flex-direction: column
+          .left-block
+            margin-bottom: 30px
+            width: 60%
+          .right-block
+            width: 60%
+
 
 
 
@@ -352,6 +401,14 @@
       display: none
     .sticky
       display: none
+
+    .about
+      .black-section
+        .wrap-section
+          .right-block
+            width: 80%
+          .left-block
+            width: 80%
 
 
 
@@ -663,6 +720,36 @@
     .mobile-hidden-video
       display: none
 
+    .about
+      .icons-block
+        ul
+          justify-content: flex-start
+          align-items: flex-start
+          li
+            flex-direction: column
+            //justify-content: center
+            //align-items: center
+          p
+            text-align: center
+      .video-block
+        .video-controll
+          width: 500px
+          height: auto
+        .icons-left-block
+          max-width: 500px
+          ul
+            p
+              font-size: 13px
+      .black-section
+        .wrap-section
+          .right-block
+            width: 100%
+            font-size: 28px
+          .left-block
+            width: 100%
+            font-size: 16px
+
+
 @media only screen and (max-width : 600px)
     .section-best-sellers
       background-image: none !important
@@ -738,6 +825,21 @@
       &:after
         width: 6px
         height: 6px
+
+    .about
+      .video-block
+        .video-controll
+          width: 375px
+        .icons-left-block
+          ul
+            li
+              flex-direction: column
+              align-items: center
+              justify-content: center
+            .wrap-img
+              margin-bottom: 15px
+            p
+              text-align: center
 
 
 
@@ -972,6 +1074,15 @@
           overflow: hidden
           height: 50px
           display: none
+
+    .about
+      .video-block
+        .video-controll
+          width: 100%
+      .black-section
+        .wrap-section
+          .right-block
+            font-size: 20px
 
 
 

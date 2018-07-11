@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Ronson</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+
+
+    <!-- Facebook Pixel Code -->
+
+    <script>
+
+        !function(f,b,e,v,n,t,s)
+
+
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+
+            n.queue=[];t=b.createElement(e);t.async=!0;
+
+
+            t.src=v;s=b.getElementsByTagName(e)[0];
+
+
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '782731271921380');
+
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1"
+
+             src="https://www.facebook.com/tr?id=782731271921380&ev=PageView
+
+&noscript=1"/>
+
+    </noscript>
+
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google AdWords: 808590525 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-808590525"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-808590525');
+    </script>
+
+</head>
+
+<body>
+
+<div class="wraper">
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--<h3> השאירו פרטים</h3>-->
+            <!--<p>לפגישה וקבלת פרטים אודות דירות להשקעה בטוחה בפולין,</p>-->
+            <h3>צרו קשר</h3>
+            <p>רוצים שנחזור אליכם? השאירו פרטים ונדבר בהקדם</p>
+            <form action="floating_form_sender.php" class="form form-validation" method="post">
+                <div class="form-row-wrap">
+                    <input type="hidden" value="7674" name="ProjectID">
+                    <input type="hidden" value="zxc1204" name="Password">
+                    <div class="form-row">
+                        <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
+                    </div>
+                    <div class="form-row">
+                        <input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+                    </div>
+                    <div class="form-row">
+                        <input name="email" class="form-control" type="email" placeholder="דוא”ל">
+                    </div>
+                    <div class="form-row">
+                        <textarea name="description" class="form-control textarea"  placeholder="תוכן הפנייה"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" class="btn" value="שלח">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="header">
+        <div class="header-conteiner">
+            <div class="logo">
+                <a href="/">
+                    <img src="img/logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="info-section">
+                <ul class="info-left">
+                    <li><a href="tel:03-6988888"><span class="head-hidden">או דברו איתנו: </span><span class="phon-number">03-6988888</span></a></li>
+                    <li class="head-hidden"><a href="#" id="myBtn">יש לכם שאלות? <span>לחצו</span></a></li>
+                    <li class="head-hidden hover-red"><a href="mailto:office@ronson.co.il"><span class="post-card"></span></a></li>
+                </ul>
+                <ul class="info-right">
+                    <!--<li><a href="#">המועדפים עלי (0)</a></li>-->
+                    <li><a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a></li>
+                    <li><a href="/#video-section"><span class="youtube"></span></a></li>
+                </ul>
+            </div>
+            <div class="nav-section" id="form-scrol">
+                <a href="/">
+                    <div class="floating-logo" style="background-image: url(img/logo2.png)"></div>
+                </a>
+                <ul class="main-mnu">
+                    <!--<li><a href="#">מיקום</a></li>-->
+                    <!--<li><a href="#">אינדקס</a></li>-->
+                    <li><a href="why.html">למה פולין?</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="how.html">איך זה עובד?</a></li>
+                    <li><a href="blog.html">פרסומים</a></li>
+                    <li><a href="contacts.html">צרו קשר</a></li>
+                </ul>
+                <div class="togle-wrap">
+                    <a href="#" class="toggle-mnu hidden-md hidden-lg"><span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="why-page about" style="background-image: url(img/blog/why-bg2.png)">
+            <!--<div class="corner-bg"></div>-->
+            <!--<div class="layer-bg" style="background-image: url(img/bg-layer2.png)"></div>-->
+            <!--<div class="layer-bg3" style="background-image: url(img/blog/bg-layer4-4.png)"></div>-->
+            <div class="layer-bg2"></div>
+            <div class="layer-red" style="background-image: url(img/about/bg-lier2.png)"></div>
+            <!--<div class="layer-bg4-4-4" style="background-image: url(img/blog/bg-layer4-4-4.png)"></div>-->
+
+            <div class="main-holder">
+
+                <div class="text-section">
+                    <h1>אודות רונסון</h1>
+
+
+                    <div class="content">
+                        <p>"רונסון" היא אחת מחברות יזמות הנדל"ן הגדולות והמובילות בפולין. לחברה ניסיון של 20 שנה בשוק הנדל"ן הפולני, יסודות חזקים, מאזנים מעולים ודוחות רווח והפסד מצויינים, בעשר השנים האחרונות רונסון נסחרת בבורסה הפולנית.</p>
+                        <p>בעלת השליטה ברונסון הינה קבוצת עמוס לוזון יזמות ואנרגיה בע"מ, שבבעלותה עשרות פרויקטים בארץ ובעולם, והיא נחשבת לאחת הקבוצות המובילות בשוק הנדל"ן הישראלי.</p>
+                        <p>לרונסון <b>עשרות פרויקטים שהקמתם הושלמה ועוד כעשרה פרויקטים הנמצאים כרגע בתהליכי שיווק ובנייה</b> והיא החברה היחידה בפולין שמיוצגת על ידי סניף שיווק ומכירות בישראל.</p>
+                        <p>"רונסון" זכתה בפרסים רבים וציונים לשבח, ודורגה ע"י איגוד ה-SEG והאיגוד הפולני של החברות הנסחרות כמובילה בנושאים של:</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="icons-block">
+                <div class="main-holder">
+                    <ul>
+                        <li>
+                            <div class="wrap-img">
+                                <img src="img/about/Rectangle8.png" alt="">
+                            </div>
+                            <div class="wrap-text">
+                                <p>תקשורת עם משקיעים</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="wrap-img">
+                                <img src="img/about/Rectangle8.png" alt="">
+                            </div>
+                            <div class="wrap-text">
+                                <p>דעת קהל בקרב משקיעים פרטיים</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="wrap-img">
+                                <img src="img/about/Rectangle8.png" alt="">
+                            </div>
+                            <div class="wrap-text">
+                                <p>חדשנות ואינטואיטיביות </p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="wrap-img">
+                                <img src="img/about/Rectangle8.png" alt="">
+                            </div>
+                            <div class="wrap-text">
+                                <p>בהירות המסר ותוכן המידע </p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="video-block">
+                <div class="main-holder">
+                    <h3>רונסון מתחדשת כל הזמן:</h3>
+                    <div class="wrap-block">
+                        <div class="icons-left-block">
+                            <ul>
+                                <li>
+                                    <div class="wrap-img">
+                                        <img src="img/about/Vector-1.png" alt="">
+                                    </div>
+                                    <div class="wrap-text">
+                                        <p>הפרויקטים החדשים של רונסון משלבים איכות בלתי מתפשרת ברמת הגימור</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="wrap-img">
+                                        <img src="img/about/Vector-2.png" alt="">
+                                    </div>
+                                    <div class="wrap-text">
+                                        <p>הנכסים מוקמים תוך הקפדה על עיצוב מודרני ופונקציונלי</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="wrap-img">
+                                        <img src="img/about/Vector-3.png" alt="">
+                                    </div>
+                                    <div class="wrap-text">
+                                        <p>הנכסים אטרקטיביים - ממוקמים בערים מרכזיות </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="wrap-img">
+                                        <img src="img/about/Vector-4.png" alt="">
+                                    </div>
+                                    <div class="wrap-text">
+                                        <p>תשתית עירונית מקיפה לרבות: קניונים, פארקים, מכוני כושר ומרכזי ספורט </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="wrap-img">
+                                        <img src="img/about/Vector-5.png" alt="">
+                                    </div>
+                                    <div class="wrap-text">
+                                        <p>תחבורה מתקדמת ונגישות עירונית</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="video" id="video-section">
+                            <!--<video src="img/Ronson_FINAL.mp4"></video>-->
+                            <video class="video-controll mobile-hidden-video" id="videoPlayer" controls poster="img/video-play.png" onclick="this.paused ? this.play() : this.pause();">
+                                <!--<source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>-->
+                                <source  src="video/Ronson_FINAL.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                <!--<source src="video/Ronson_FINAL.mp4" type='video/mp4'>-->
+                                <!--<source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>-->
+                                <!--<a href="img/Ronson_FINAL.mp4">Скачайте видео</a>-->
+                            </video>
+                            <video class="video-controll desctop-hidden-video" id="videoPlayer" controls poster="img/video-play.png" onclick="this.paused ? this.play() : this.pause();">
+                                <!--<source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>-->
+                                <source src="video/ronson.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                <!--<source src="video/Ronson_FINAL.mp4" type='video/mp4'>-->
+                                <!--<source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>-->
+                                <!--<a href="img/Ronson_FINAL.mp4">Скачайте видео</a>-->
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="black-section">
+                <div class="main-holder">
+                    <div class="wrap-section">
+                        <div class="left-block">
+                            <p>ליווי אישי וצמוד לאורך התהליך </p>
+                            <p>חבילת שירות כוללת של טיפול מקיף והתנהלות מול הרשויות, לרבות איתור חברה לניהול הנכס וביצוע עבודות גמר</p>
+                            <p>ידע מקיף בזירת הנדל"ן הפולנית</p>
+                        </div>
+                        <div class="right-block">
+                            <div class="wrap-text">
+                                <p>מלבד קניית הנכס,</p>
+                                <p>לרונסון ישראל <b>יתרונות נוספים:</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="fifth-section">
+            <div class="main-holder">
+                <div class="buttons">
+                    <a href="https://api.whatsapp.com/send?phone=97236988888" class="mobile-hidden"><span class="phone-text">וואטס אפ עסקי</span><span class="phon-number">03-6988888</span><span class="mobile-phone"></span></a>
+                    <a href="#" id="myBtn2" ><span>כתבו  <span class="column">לנו</span></span><span class="mail"></span></a>
+                    <a href="tel:03-6988888"><span class="phone-text">דברו איתנו</span><span class="phon-number">03-6988888</span><span class="phone"></span></a>
+                </div>
+                <h3>בקרו אותנו ב:</h3>
+                <div class="social-section">
+                    <a href="https://www.facebook.com/RonsonIsrael/" target="_blank"><span class="facebook"></span></a>
+                    <a href="/#video-section"><span class="youtube"></span></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <!--<li><a href="#">מיקום</a></li>-->
+                        <!--<li><a href="#">אינדקס</a></li>-->
+                        <li><a href="why.html">למה פולין?</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="how.html">איך זה עובד?</a></li>
+                        <li><a href="blog.html">פרסומים</a></li>
+                        <li><a href="contacts.html">צרו קשר</a></li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <p>ההדמיות, ההנפשות והמודלים של המבנים המוצגים באתר www.ronson.co.il. דומים לאובייקט הסופי ככל שניתן, כלומר הם עשויים להיות שונים מהמקור, במראה המבנים בפועל, פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים ופונקציונליות המבנים לא ישתנו.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <!--<span class="label">Gofman creative</span>-->
+        <div class="main-holder">
+            <div class="logo-footer">
+                <a href="/">
+                    <img src="img/logo-footer2.png" alt="">
+                </a>
+            </div>
+            <div class="footer-description">
+                <!--<p><strong>ופונקציונליות המבנים לא ישתנו.</strong>פיתוח הקרקע וסביבת הנכס, גם מבחינת סכמת הצבעים. יחד עם זאת, התכונות והפרטים הבסיסיים </p>-->
+
+                <p>
+                    <!--<strong>א.מ.ו.ר - פולין נדלן בע”מ</strong>-->
+                    <!--משווקת בלעדית של רונסון בישראל<br>-->
+                    טל: 03-6988888 | מייל: office@ronson.co.il<br>
+                    מגדל אלון 2, יגאל אלון 94, תל אביב, קומה 28, מיקוד 6789140</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
